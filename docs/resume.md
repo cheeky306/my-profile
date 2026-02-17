@@ -71,7 +71,7 @@ Technical Auditing, GEO Strategy, Schema Markup, AI Automation (Claude Code, Scr
 <div class="meta-line">Remote · Apr 2024 – Sep 2025</div>
 
 - Led market analysis and positioning for **Buyience**, an AI-powered B2B commerce platform built on MACH principles.
-- Translated complex capabilities — WebSocket-powered real-time negotiations, AI-driven quote engines — into actionable **Product Requirement Documents (PRDs)**.
+- **Product Requirement Documents (PRDs)** scaffold developed from live customer interviews.
 - Defined value propositions around "Dynamic Pricing Optimization" and tiered pricing structures for go-to-market execution.
 - Executed AI-driven SEO strategies and UI/UX audits for agency clients, delivering measurable improvements in organic visibility.
 
