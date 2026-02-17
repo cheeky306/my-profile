@@ -7,4 +7,4 @@ This portal contains:
 - Findings
 - 90 day execution plan
 
-→ Start here: [Open Audit](/my-profile/audit/)
+→ Start here: [Open Audit](/audit/)
