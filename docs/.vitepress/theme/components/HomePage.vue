@@ -10,8 +10,8 @@ import { withBase } from 'vitepress'
           <a class="brand" :href="withBase('/')">
             <img class="brand-logo" :src="withBase('/img/logo.png')" alt="JF" />
             <div class="brand-text">
-              <span>Jordian's Portfolio</span>
-              <span class="brand-credential">MSc Business Marketing — University of Reykjavik</span>
+              <span class="brand-degree">MSc Business Marketing</span>
+              <span class="brand-university">University of Reykjavik</span>
             </div>
           </a>
 
@@ -237,9 +237,13 @@ import { withBase } from 'vitepress'
 .homepage-wrapper .brand-text {
   display: flex; flex-direction: column; line-height: 1.2;
 }
-.homepage-wrapper .brand-credential {
-  font-size: 9px; font-weight: 400; letter-spacing: .04em;
-  color: rgba(247,246,243,.38); margin-top: 3px;
+.homepage-wrapper .brand-degree {
+  font-size: 13px; font-weight: 600; letter-spacing: -.01em;
+  color: rgba(247,246,243,.85);
+}
+.homepage-wrapper .brand-university {
+  font-size: 10px; font-weight: 400; letter-spacing: .04em;
+  color: rgba(247,246,243,.42); margin-top: 1px;
 }
 .homepage-wrapper .brand-logo {
   width: 32px; height: 32px; border-radius: 999px; object-fit: cover;
