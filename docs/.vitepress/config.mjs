@@ -21,7 +21,7 @@ export default {
         text: "Portfolio",
         items: [
           { text: "Dutch.com Audit", link: "/audit/dutch" },
-          { text: "Case Studies", link: "/case-study" }
+          { text: "Case Study", link: "/case-study" }
         ]
       },
       {
@@ -42,7 +42,7 @@ export default {
           text: "Portfolio",
           items: [
             { text: "Dutch.com Audit", link: "/audit/dutch" },
-            { text: "Case Studies", link: "/case-study" }
+            { text: "Case Study", link: "/case-study" }
           ]
         },
         {
@@ -57,7 +57,7 @@ export default {
           text: "Portfolio",
           items: [
             { text: "Dutch.com Audit", link: "/audit/dutch" },
-            { text: "Case Studies", link: "/case-study" }
+            { text: "Case Study", link: "/case-study" }
           ]
         },
         {

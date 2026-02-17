@@ -1,25 +1,21 @@
 ---
-title: Case Studies
-description: Quantified SEO wins — problem, actions, outcomes.
+title: "Case Study: GOOD GOOD Brand — 2,433% Organic Growth"
+description: "How I built the SEO engine that took a Series B Icelandic startup from 0 to 14,109 ranking keywords and 40K monthly organic visits."
 ---
 
 <div class="page-hero">
 
-<div class="kicker">PROBLEM • ACTIONS • OUTCOMES</div>
-
-# Case Studies
-
-<div class="subhead">
-Lean format: what was broken, what I did, what changed. Numbers over narratives.
-</div>
-
-</div>
-
----
+<div class="kicker">CASE STUDY • GOOD GOOD BRAND</div>
 
 <img src="/img/case-study/goodgood-logo.jpg" alt="GOOD GOOD Brand logo" class="cs-client-logo" />
 
-## GOOD GOOD Brand — 2,433% Organic Growth
+# 2,433% Organic Growth for a Series B Icelandic Startup
+
+<div class="subhead">
+How I built the SEO engine at GOOD GOOD Brand from zero — 0 keywords, 0 traffic — to 14,109 ranking keywords and 40,100 monthly organic visits. The engine is still compounding a year after my departure.
+</div>
+
+</div>
 
 ### Context
 <div class="meta-line"><span>Industry:</span> DTC Food & Beverage (Jam, Spreads, Sweeteners) · <span>Platform:</span> Shopify · <span>Timeline:</span> Jan 2022 – Mar 2024 (effects compounding through 2025)</div>

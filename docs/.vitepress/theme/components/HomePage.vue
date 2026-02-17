@@ -29,7 +29,7 @@ function toggleSection(name) {
               <span class="nav-link nav-trigger">Portfolio <span class="chevron">&#9662;</span></span>
               <div class="nav-dropdown-menu">
                 <a class="nav-dropdown-item" :href="withBase('/audit/dutch')">Dutch.com Audit</a>
-                <a class="nav-dropdown-item" :href="withBase('/case-study')">Case Studies</a>
+                <a class="nav-dropdown-item" :href="withBase('/case-study')">Case Study</a>
               </div>
             </div>
             <div class="nav-dropdown">
@@ -75,7 +75,7 @@ function toggleSection(name) {
         </button>
         <div class="mobile-section-items" v-show="mobileSection === 'portfolio'">
           <a class="mobile-link sub" :href="withBase('/audit/dutch')" @click="mobileOpen = false">Dutch.com Audit</a>
-          <a class="mobile-link sub" :href="withBase('/case-study')" @click="mobileOpen = false">Case Studies</a>
+          <a class="mobile-link sub" :href="withBase('/case-study')" @click="mobileOpen = false">Case Study</a>
         </div>
       </div>
 
@@ -133,14 +133,18 @@ function toggleSection(name) {
             </a>
           </article>
 
-          <article class="card">
+          <article class="card dark">
             <div class="meta">CASE STUDY</div>
-            <h3>Quantified Wins</h3>
+            <div class="card-brand">
+              <img :src="withBase('/img/case-study/goodgood-logo.jpg')" alt="GOOD GOOD Brand" class="card-brand-logo" />
+              <h3>GOOD GOOD Brand</h3>
+            </div>
             <p>
-              Problem &rarr; actions &rarr; outcomes. Numbers over narratives.
+              2,433% YoY organic growth for a Series B funded Icelandic startup.
+              Zero to 14,109 ranking keywords. Engine still compounding post-departure.
             </p>
             <a class="link" :href="withBase('/case-study')">
-              View Case Studies <span class="arrow">&rarr;</span>
+              View Case Study <span class="arrow">&rarr;</span>
             </a>
           </article>
 
