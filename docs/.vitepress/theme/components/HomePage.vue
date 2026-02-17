@@ -1,5 +1,13 @@
 <script setup>
+import { ref } from 'vue'
 import { withBase } from 'vitepress'
+
+const mobileOpen = ref(false)
+const mobileSection = ref('')
+
+function toggleSection(name) {
+  mobileSection.value = mobileSection.value === name ? '' : name
+}
 </script>
 
 <template>
@@ -36,6 +44,10 @@ import { withBase } from 'vitepress'
             </div>
           </nav>
 
+          <button class="hamburger" :class="{ active: mobileOpen }" @click="mobileOpen = !mobileOpen" aria-label="Menu">
+            <span></span><span></span><span></span>
+          </button>
+
           <div class="nav-right">
             <div class="nav-location">Regina, SK <span class="flag">&#127464;&#127462;</span></div>
             <div class="nav-socials">
@@ -53,6 +65,33 @@ import { withBase } from 'vitepress'
         </div>
       </div>
     </header>
+
+    <div class="mobile-menu" :class="{ open: mobileOpen }">
+      <a class="mobile-link" :href="withBase('/')" @click="mobileOpen = false">Home</a>
+
+      <div class="mobile-section">
+        <button class="mobile-section-toggle" @click="toggleSection('portfolio')">
+          Portfolio <span class="chevron" :class="{ rotated: mobileSection === 'portfolio' }">&#9662;</span>
+        </button>
+        <div class="mobile-section-items" v-show="mobileSection === 'portfolio'">
+          <a class="mobile-link sub" :href="withBase('/audit/dutch')" @click="mobileOpen = false">Dutch.com Audit</a>
+          <a class="mobile-link sub" :href="withBase('/case-study')" @click="mobileOpen = false">Case Studies</a>
+        </div>
+      </div>
+
+      <div class="mobile-section">
+        <button class="mobile-section-toggle" @click="toggleSection('about')">
+          About <span class="chevron" :class="{ rotated: mobileSection === 'about' }">&#9662;</span>
+        </button>
+        <div class="mobile-section-items" v-show="mobileSection === 'about'">
+          <a class="mobile-link sub" :href="withBase('/resume')" @click="mobileOpen = false">Resume</a>
+          <a class="mobile-link sub" href="#skills" @click="mobileOpen = false">Skills</a>
+          <a class="mobile-link sub" :href="withBase('/methodology')" @click="mobileOpen = false">Methodology</a>
+          <a class="mobile-link sub" :href="withBase('/about')" @click="mobileOpen = false">About Me</a>
+          <a class="mobile-link sub" href="#contact" @click="mobileOpen = false">Contact</a>
+        </div>
+      </div>
+    </div>
 
     <main id="home" class="hero">
       <div class="container">
@@ -527,12 +566,74 @@ import { withBase } from 'vitepress'
   text-transform: uppercase; color: rgba(10,10,10,.50);
 }
 
+/* Hamburger */
+.homepage-wrapper .hamburger {
+  display: none; background: none; border: none; cursor: pointer;
+  padding: 6px; margin-left: auto; margin-right: 12px;
+  flex-direction: column; gap: 5px;
+}
+.homepage-wrapper .hamburger span {
+  display: block; width: 22px; height: 2px;
+  background: rgba(247,246,243,.7); border-radius: 2px;
+  transition: transform .2s ease, opacity .2s ease;
+}
+.homepage-wrapper .hamburger.active span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
+}
+.homepage-wrapper .hamburger.active span:nth-child(2) { opacity: 0; }
+.homepage-wrapper .hamburger.active span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile menu */
+.homepage-wrapper .mobile-menu {
+  display: none; flex-direction: column;
+  background: rgba(7,10,15,.97); backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  padding: 8px 0; overflow: hidden;
+  max-height: 0; transition: max-height .3s ease, padding .3s ease;
+}
+.homepage-wrapper .mobile-menu.open {
+  max-height: 500px; padding: 12px 0;
+}
+.homepage-wrapper .mobile-link {
+  display: block; padding: 12px var(--pad);
+  font-size: 15px; color: rgba(247,246,243,.7);
+  transition: color .12s ease, background .12s ease;
+}
+.homepage-wrapper .mobile-link:hover,
+.homepage-wrapper .mobile-link:active {
+  color: rgba(247,246,243,.95); background: rgba(255,255,255,.04);
+}
+.homepage-wrapper .mobile-link.sub {
+  padding-left: calc(var(--pad) + 16px); font-size: 14px;
+  color: rgba(247,246,243,.55);
+}
+.homepage-wrapper .mobile-link.sub:hover { color: rgba(247,246,243,.85); }
+.homepage-wrapper .mobile-section-toggle {
+  display: flex; align-items: center; gap: 6px; width: 100%;
+  padding: 12px var(--pad); background: none; border: none;
+  font-size: 15px; color: rgba(247,246,243,.7);
+  font-family: inherit; cursor: pointer; text-align: left;
+}
+.homepage-wrapper .mobile-section-toggle:hover {
+  color: rgba(247,246,243,.95);
+}
+.homepage-wrapper .mobile-section-toggle .chevron {
+  transition: transform .2s ease;
+}
+.homepage-wrapper .mobile-section-toggle .chevron.rotated {
+  transform: rotate(180deg);
+}
+
 /* Responsive */
 @media (max-width: 980px) {
   .homepage-wrapper .card { grid-column: span 6; }
   .homepage-wrapper .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .homepage-wrapper .nav-links { display: none; }
   .homepage-wrapper .nav-location { display: none; }
+  .homepage-wrapper .hamburger { display: flex; }
+  .homepage-wrapper .mobile-menu { display: flex; }
 }
 @media (max-width: 620px) {
   .homepage-wrapper .card { grid-column: span 12; }
