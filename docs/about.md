@@ -52,14 +52,14 @@ Crawlability, indexation, canonicals, redirect chains, log file analysis, headin
 <div class="about-card">
 <h4>AI search visibility (GEO)</h4>
 
-I test how brands actually appear in Google AI Mode, ChatGPT, and Perplexity. Crawler access auditing, llms.txt implementation, passage-level citability, structured data for AI extraction. This is where search is going.
+I test how brands actually appear in Google AI Mode, ChatGPT, and Perplexity. Crawler access auditing, llms.txt implementation, passage-level citability, structured data for AI extraction. AI search is evolving fast — I stay current through industry newsletters, Reddit communities, and practitioner forums so I'm always working with the latest best practices.
 
 </div>
 
 <div class="about-card">
-<h4>Product & brand strategy</h4>
+<h4>Team player</h4>
 
-7+ years of P&L ownership, go-to-market execution, and product positioning. I understand the business side — CAC, LTV, conversion funnels — not just the search side. I've written PRDs, managed NPD pipelines, and directed packaging redesigns.
+Hard work, dedication, and commitment to the team — not just words, but values I built over years as a professional soccer player and coach. I show up, put in the work, and make the people around me better.
 
 </div>
 
