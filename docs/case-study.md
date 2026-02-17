@@ -46,57 +46,144 @@ GOOD GOOD is an Icelandic better-for-you jam and sweetener brand. When I joined 
 
 6. **CRM and site infrastructure.** Led HubSpot CRM implementation and full website redesign to support the growth.
 
-### Outcomes — organic traffic
+### Outcomes — organic traffic growth
 
-| Period | Organic traffic (monthly) | Change |
-|--------|-------------------------:|-------:|
-| Jul 2022 (baseline after 6 months) | 1,700 | — |
-| Jul 2023 | 4,400 | +159% |
-| Jul 2024 | 33,800 | +**1,888%** from baseline |
-| Current (2025) | 40,100 | +**2,259%** from baseline |
+<div class="chart-container">
+<div class="chart-title">Monthly organic traffic (SEMrush)</div>
+<div class="bar-chart">
+  <div class="bar-row">
+    <span class="bar-label">Jul 2022</span>
+    <div class="bar-track"><div class="bar-fill" style="width:4.2%"><span class="bar-value">1.7K</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">Jul 2023</span>
+    <div class="bar-track"><div class="bar-fill" style="width:11%"><span class="bar-value">4.4K</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">Jul 2024</span>
+    <div class="bar-track"><div class="bar-fill bar-highlight" style="width:84.3%"><span class="bar-value">33.8K</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">2025</span>
+    <div class="bar-track"><div class="bar-fill bar-highlight" style="width:100%"><span class="bar-value">40.1K</span></div></div>
+  </div>
+</div>
+<div class="chart-caption">+2,259% from baseline — engine continues compounding post-departure</div>
+</div>
 
-### Outcomes — keyword rankings (unbranded)
+### Outcomes — unbranded keyword rankings
 
-| Period | Keywords ranking | Organic traffic | YoY growth |
-|--------|----------------:|----------------:|-----------:|
-| May 2021 | 0 | 0 | — |
-| May 2022 | 26 | 150 | — |
-| May 2023 | 3,023 | 3,800 | +2,433% |
-| May 2024 | 9,158 | 38,300 | +908% |
-| May 2025 | 14,109 | 40,100 | +5% |
+<div class="chart-container">
+<div class="chart-title">Keywords ranking (unbranded)</div>
+<div class="bar-chart">
+  <div class="bar-row">
+    <span class="bar-label">May 2021</span>
+    <div class="bar-track"><div class="bar-fill bar-zero" style="width:1%"><span class="bar-value">0</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">May 2022</span>
+    <div class="bar-track"><div class="bar-fill" style="width:1.5%"><span class="bar-value">26</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">May 2023</span>
+    <div class="bar-track"><div class="bar-fill" style="width:21.4%"><span class="bar-value">3,023</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">May 2024</span>
+    <div class="bar-track"><div class="bar-fill bar-highlight" style="width:64.9%"><span class="bar-value">9,158</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">May 2025</span>
+    <div class="bar-track"><div class="bar-fill bar-highlight" style="width:100%"><span class="bar-value">14,109</span></div></div>
+  </div>
+</div>
+</div>
 
 <div class="cs-callout">
 <div class="cs-callout-number">14,109</div>
 <div class="cs-callout-label">unbranded keywords ranking — up from zero in May 2021</div>
 </div>
 
-### Outcomes — branded search
+### Outcomes — branded vs. unbranded traffic
 
-| Period | Branded visitors (monthly) |
-|--------|---------------------------:|
-| May 2022 | 159 |
-| May 2025 | 4,900 |
-| **Growth** | **+2,981%** |
-
-Branded search growth reflects the compounding effect of the US-First pivot: packaging redesign, DTC scale-up, content engine, and retail distribution all feeding brand awareness.
+<div class="chart-container">
+<div class="chart-title">Branded vs. unbranded organic traffic (monthly)</div>
+<div class="dual-chart">
+  <div class="dual-col">
+    <div class="dual-heading">Branded</div>
+    <div class="bar-chart">
+      <div class="bar-row">
+        <span class="bar-label">May '22</span>
+        <div class="bar-track"><div class="bar-fill bar-branded" style="width:3.2%"><span class="bar-value">159</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">May '25</span>
+        <div class="bar-track"><div class="bar-fill bar-branded" style="width:100%"><span class="bar-value">4.9K</span></div></div>
+      </div>
+    </div>
+    <div class="dual-stat">+2,981%</div>
+  </div>
+  <div class="dual-col">
+    <div class="dual-heading">Unbranded</div>
+    <div class="bar-chart">
+      <div class="bar-row">
+        <span class="bar-label">May '22</span>
+        <div class="bar-track"><div class="bar-fill" style="width:0.4%"><span class="bar-value">150</span></div></div>
+      </div>
+      <div class="bar-row">
+        <span class="bar-label">May '25</span>
+        <div class="bar-track"><div class="bar-fill bar-highlight" style="width:100%"><span class="bar-value">40.1K</span></div></div>
+      </div>
+    </div>
+    <div class="dual-stat">+26,633%</div>
+  </div>
+</div>
+<div class="chart-caption">Brand + SEO flywheel: the US-First pivot drove branded search, which drove domain authority, which drove unbranded rankings</div>
+</div>
 
 ### Outcomes — Google Search Console
 
-| Period | Monthly clicks from Google |
-|--------|---------------------------:|
-| Jan 2024 | 6,740 |
-| Jan 2025 | 21,800 |
-| **Growth** | **+223%** |
+<div class="chart-container">
+<div class="chart-title">Monthly clicks from Google (GSC)</div>
+<div class="bar-chart">
+  <div class="bar-row">
+    <span class="bar-label">Jan 2024</span>
+    <div class="bar-track"><div class="bar-fill" style="width:30.9%"><span class="bar-value">6,740</span></div></div>
+  </div>
+  <div class="bar-row">
+    <span class="bar-label">Jan 2025</span>
+    <div class="bar-track"><div class="bar-fill bar-highlight" style="width:100%"><span class="bar-value">21,800</span></div></div>
+  </div>
+</div>
+<div class="chart-caption">+223% year-over-year</div>
+</div>
 
 ### Outcomes — compounding growth rates
 
-| Period | YoY organic traffic growth |
-|--------|---------------------------:|
-| 2022 → 2023 | +11,527% |
-| 2023 → 2024 | +203% |
-| 2024 → 2025 | +54% |
-
-Growth is compounding but showing natural diminishing returns — the engine I built continues to perform, but without continued investment the gains will plateau.
+<div class="chart-container">
+<div class="chart-title">Year-over-year organic traffic growth</div>
+<div class="growth-timeline">
+  <div class="growth-item">
+    <div class="growth-period">2022 → 2023</div>
+    <div class="growth-bar-track"><div class="growth-bar" style="width:100%"></div></div>
+    <div class="growth-pct">+11,527%</div>
+    <div class="growth-note">Foundation built — 0 to engine</div>
+  </div>
+  <div class="growth-item">
+    <div class="growth-period">2023 → 2024</div>
+    <div class="growth-bar-track"><div class="growth-bar" style="width:45%"></div></div>
+    <div class="growth-pct">+203%</div>
+    <div class="growth-note">SEO agency investment scaled content</div>
+  </div>
+  <div class="growth-item">
+    <div class="growth-period">2024 → 2025</div>
+    <div class="growth-bar-track"><div class="growth-bar growth-bar-dim" style="width:18%"></div></div>
+    <div class="growth-pct">+54%</div>
+    <div class="growth-note">Post-departure — still compounding, but slowing</div>
+  </div>
+</div>
+<div class="chart-caption">Growth compounds, but diminishes without continued investment</div>
+</div>
 
 ### Notable ranking wins
 
@@ -222,5 +309,153 @@ Growth is compounding but showing natural diminishing returns — the engine I b
   font-size: 13px;
   color: rgba(255,255,255,.58);
   line-height: 1.5;
+}
+
+/* ── Chart system ── */
+.chart-container{
+  margin: 20px 0;
+  padding: 20px 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,.08);
+  background: rgba(10,12,16,.55);
+}
+.chart-title{
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+  margin-bottom: 16px;
+}
+.chart-caption{
+  margin-top: 12px;
+  font-size: 12px;
+  color: rgba(255,255,255,.40);
+  line-height: 1.45;
+}
+
+/* Horizontal bar chart */
+.bar-chart{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.bar-row{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.bar-label{
+  flex: 0 0 80px;
+  font-size: 13px;
+  color: rgba(255,255,255,.55);
+  text-align: right;
+  white-space: nowrap;
+}
+.bar-track{
+  flex: 1;
+  height: 32px;
+  background: rgba(255,255,255,.04);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+.bar-fill{
+  height: 100%;
+  min-width: 2px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, rgba(255,140,50,.50), rgba(255,140,50,.70));
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  transition: width 0.6s ease;
+}
+.bar-fill.bar-highlight{
+  background: linear-gradient(90deg, rgba(255,140,50,.65), rgba(255,140,50,.90));
+}
+.bar-fill.bar-zero{
+  background: rgba(255,255,255,.08);
+}
+.bar-fill.bar-branded{
+  background: linear-gradient(90deg, rgba(120,160,255,.45), rgba(120,160,255,.70));
+}
+.bar-value{
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(255,255,255,.90);
+  white-space: nowrap;
+}
+
+/* Dual column chart (branded vs unbranded) */
+.dual-chart{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+@media (max-width: 640px){
+  .dual-chart{ grid-template-columns: 1fr; }
+}
+.dual-heading{
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.50);
+  margin-bottom: 10px;
+}
+.dual-stat{
+  margin-top: 8px;
+  font-size: 22px;
+  font-weight: 700;
+  color: rgba(255,140,50,.85);
+}
+.dual-col:first-child .dual-stat{
+  color: rgba(120,160,255,.85);
+}
+
+/* Growth timeline chart */
+.growth-timeline{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.growth-item{
+  display: grid;
+  grid-template-columns: 100px 1fr auto;
+  grid-template-rows: auto auto;
+  gap: 4px 12px;
+  align-items: center;
+}
+.growth-period{
+  grid-row: 1 / 3;
+  font-size: 13px;
+  color: rgba(255,255,255,.55);
+  text-align: right;
+}
+.growth-bar-track{
+  height: 24px;
+  background: rgba(255,255,255,.04);
+  border-radius: 5px;
+  overflow: hidden;
+}
+.growth-bar{
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, rgba(255,140,50,.55), rgba(255,140,50,.85));
+}
+.growth-bar.growth-bar-dim{
+  background: linear-gradient(90deg, rgba(255,140,50,.25), rgba(255,140,50,.40));
+}
+.growth-pct{
+  font-size: 16px;
+  font-weight: 700;
+  color: rgba(255,140,50,.90);
+  white-space: nowrap;
+}
+.growth-note{
+  grid-column: 2 / 4;
+  font-size: 12px;
+  color: rgba(255,255,255,.38);
 }
 </style>
