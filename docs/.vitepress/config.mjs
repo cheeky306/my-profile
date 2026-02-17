@@ -4,8 +4,8 @@ import { dirname, resolve } from 'path'
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
 export default {
-  title: "Audit Portal",
-  description: "SEO + AI visibility audit",
+  title: "Jordian Farahani",
+  description: "SEO + AI visibility portfolio",
 
   base: "/my-profile/",
   outDir: resolve(__dirname, '../../dist'),
@@ -13,12 +13,17 @@ export default {
   appearance: 'dark',
 
   themeConfig: {
-    siteTitle: "Audit Portal",
+    siteTitle: "Jordian Farahani",
 
     nav: [
-      { text: "Home", link: "https://cheeky306.github.io/my-profile/" },
-      { text: "Audits", link: "/audit/" },
-      { text: "Dutch.com", link: "/audit/dutch" }
+      { text: "Home", link: "/" },
+      {
+        text: "Audits",
+        items: [
+          { text: "Dutch.com", link: "/audit/dutch" }
+        ]
+      },
+      { text: "Resume", link: "/#resume" }
     ],
 
     sidebar: {
@@ -26,14 +31,7 @@ export default {
         {
           text: "Audits",
           items: [
-            { text: "Overview", link: "/audit/" },
-            {
-              text: "Dutch.com",
-              collapsed: false,
-              items: [
-                { text: "Full Audit", link: "/audit/dutch" }
-              ]
-            }
+            { text: "Dutch.com", link: "/audit/dutch" }
           ]
         }
       ]
