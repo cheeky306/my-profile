@@ -1,8 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
 import type { Theme } from 'vitepress'
+import './custom.css'
 import AuditSelector from './components/AuditSelector.vue'
 import HomePage from './components/HomePage.vue'
-import '../../public/css/styles.css'
 
 export default {
   extends: DefaultTheme,

@@ -1,0 +1,13 @@
+/* Hide VitePress nav and footer on the homepage */
+.VPPage:has(.homepage-wrapper) + footer.VPFooter,
+body:has(.homepage-wrapper) .VPNav {
+  display: none !important;
+}
+
+body:has(.homepage-wrapper) .VPContent {
+  padding-top: 0 !important;
+}
+
+body:has(.homepage-wrapper) .VPPage {
+  padding: 0 !important;
+}
