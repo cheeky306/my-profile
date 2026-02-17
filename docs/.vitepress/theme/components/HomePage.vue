@@ -18,8 +18,8 @@ function toggleSection(name) {
           <a class="brand" :href="withBase('/')">
             <img class="brand-logo" :src="withBase('/img/logo.png')" alt="JF" />
             <div class="brand-text">
-              <span class="brand-degree">MSc Business Marketing</span>
-              <span class="brand-university">University of Reykjavik</span>
+              <span class="brand-name">Jordian Farahani</span>
+              <span class="brand-university">MSc Business Marketing</span>
             </div>
           </a>
 
@@ -98,10 +98,9 @@ function toggleSection(name) {
         <div class="hero-inner hero-split">
           <div class="hero-text">
             <div class="overline">SEARCH &bull; AI VISIBILITY &bull; TECHNICAL SEO</div>
-            <h1>Jordian Farahani <br/><em>Technical SEO &amp; Brand Strategist</em></h1>
+            <h1><em>SEO · AEO · GEO</em> <br/>Brand Strategist</h1>
             <p>
-              I help teams get discovered in Google and AI search. This portal shows a sample audit,
-              how I think, and the technical standards I ship against.
+              7 years in digital marketing. Technical SEO specialist.
             </p>
             <div class="hero-actions">
               <a class="btn btn-primary" :href="withBase('/audit/dutch')">View SEO Audit</a>
@@ -109,7 +108,7 @@ function toggleSection(name) {
             </div>
           </div>
           <div class="hero-photo">
-            <img :src="withBase('/img/jordianv2.png')" alt="Jordian Farahani" />
+            <img :src="withBase('/img/jordian.png')" alt="Jordian Farahani" />
           </div>
         </div>
       </div>
@@ -138,10 +137,10 @@ function toggleSection(name) {
             </a>
           </article>
 
-          <article class="card dark">
+          <article class="card card-white">
             <div class="meta">CASE STUDY</div>
             <div class="card-brand">
-              <img :src="withBase('/img/case-study/goodgood-logo.jpg')" alt="GOOD GOOD Brand" class="card-brand-logo" />
+              <img :src="withBase('/img/case-study/goodgood-logo.svg')" alt="GOOD GOOD Brand" class="card-brand-logo" />
               <h3>GOOD GOOD Brand</h3>
             </div>
             <p>
@@ -177,11 +176,10 @@ function toggleSection(name) {
         <div class="grid">
           <article class="card" style="grid-column: span 12;">
             <div class="meta">SUMMARY</div>
-            <h3>Brand &amp; Product Strategist → Technical SEO</h3>
+            <h3>Background</h3>
             <p>
-              7+ years scaling international B2B and DTC brands &mdash; from a 2,433% organic growth
-              pivot in Iceland to AI-powered search visibility systems. Bridges the gap between
-              technical product architecture and commercial market outcomes.
+              MSc in Business Marketing from Reykjavik University. 7 years across DTC, B2B, and agency-side roles.
+              Happiest when the work speaks for itself.
             </p>
             <a class="link" :href="withBase('/resume')">
               Full Resume <span class="arrow">&rarr;</span>
@@ -339,7 +337,7 @@ function toggleSection(name) {
 .homepage-wrapper .brand-text {
   display: flex; flex-direction: column; line-height: 1.2;
 }
-.homepage-wrapper .brand-degree {
+.homepage-wrapper .brand-name {
   font-size: 13px; font-weight: 600; letter-spacing: -.01em;
   color: rgba(247,246,243,.85);
 }
@@ -515,6 +513,14 @@ function toggleSection(name) {
   transform: translateY(-2px); box-shadow: var(--shadow-2);
   border-color: rgba(10,10,10,.12);
 }
+.homepage-wrapper .card.card-white {
+  background: #FFFFFF; border-color: rgba(10,10,10,.08);
+}
+.homepage-wrapper .card.card-white .meta { color: rgba(10,10,10,.55); }
+.homepage-wrapper .card.card-white h3 { color: var(--ink); }
+.homepage-wrapper .card.card-white p { color: rgba(10,10,10,.70); }
+.homepage-wrapper .card.card-white .link { color: rgba(10,10,10,.82); }
+.homepage-wrapper .card.card-white:hover { border-color: rgba(10,10,10,.16); }
 .homepage-wrapper .card.dark {
   background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,0)), var(--protocol-2);
   border-color: rgba(255,255,255,.08); color: rgba(247,246,243,.88);
