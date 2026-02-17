@@ -14,7 +14,7 @@ description: SEO + AI Visibility (GEO) audit report — methodology, data source
 # Dutch.com — SEO + AI Visibility Audit
 
 <div class="subhead">
-A structured, evidence-based audit of Dutch's search foundation across technical SEO, content trust (E-E-A-T), on-page optimization, structured data, performance, images, and AI search visibility (GEO). Built from three independent data sources: Ubersuggest site audit, Screaming Frog blog crawl, and manual analysis with PageSpeed Insights + Google AI Mode.
+A structured, evidence-based audit of Dutch's search foundation across technical SEO, content trust (E-E-A-T), on-page optimization, structured data, performance, images, and AI search visibility (GEO). Built from four independent data sources: Ubersuggest site audit, Screaming Frog blog crawl, manual analysis with PageSpeed Insights + Google AI Mode, and ChatGPT LLM visibility testing.
 </div>
 
 <div class="meta">
@@ -44,7 +44,7 @@ A structured, evidence-based audit of Dutch's search foundation across technical
 - **On-page audit** — title tags, meta descriptions, H1 structure, internal linking, URL hygiene across 1,783 indexed URLs.
 - **Structured data review** — what's present vs. missing, with focus on medical authority signals for YMYL compliance.
 - **Image accessibility + SEO** — alt text coverage across homepage, products, blog, vet profiles.
-- **AI Search Visibility (GEO)** — live Google AI Mode queries (Feb 2026), crawler access audit, llms.txt check, citability scoring.
+- **AI Search Visibility (GEO)** — 10 ChatGPT prompts across 2 categories (20 responses), live Google AI Mode queries (Feb 2026), crawler access audit, llms.txt check.
 - **Content trust (E-E-A-T)** — authorship analysis across 874 blog posts, vet credential signals, review signals.
 
 ### Limitations (what this is *not*)
@@ -52,7 +52,7 @@ A structured, evidence-based audit of Dutch's search foundation across technical
 - **No internal analytics** — no GSC/GA4 access; search demand and conversion impact are inferred from observable signals only.
 - **Blog crawl was rate-limited** — Shopify returned 429 on 76% of blog URLs (192 of 253). Dog content was hit hardest: only 6 of 158 dog posts were crawled. A re-crawl with throttling is needed for complete blog data.
 - **Lab vs. field gap** — Lighthouse scores look harsh (29 mobile) even when field data passes; lab data identifies *risk*, not current failure.
-- **AI Mode tests are small-sample** — 3 queries demonstrate patterns, not full share of voice.
+- **AI visibility tests are small-sample** — 10 prompts across 2 categories (20 responses total) in ChatGPT + 3 Google AI Mode queries. Demonstrates patterns, not full share of voice.
 
 ---
 
@@ -68,8 +68,8 @@ A structured, evidence-based audit of Dutch's search foundation across technical
 | Schema / Structured Data | 80/100 | 10% | 8.0 |
 | Performance (CWV) | 45/100 | 10% | 4.5 |
 | Images | 30/100 | 5% | 1.5 |
-| AI Search Readiness | 40/100 | 5% | 2.0 |
-| **Total** | | | **62.3** |
+| AI Search Visibility (GEO) | 50/100 | 5% | 2.5 |
+| **Total** | | | **62.8** |
 
 <div class="audit-figure-row">
   <figure class="audit-figure">
@@ -87,15 +87,16 @@ A structured, evidence-based audit of Dutch's search foundation across technical
 2. **79% of homepage images have empty alt text** — product images are universally empty. ADA compliance risk + missed image SEO.
 3. **541 on-page issues** flagged by Ubersuggest — 288 short titles, 131 long titles, 72 duplicate meta descriptions, 6+ pairs of duplicate pages.
 4. **Mobile Lighthouse 29/100** — ~1MB unused JS creates fragile performance despite passing field CWV.
-5. **No llms.txt** — missing AI search optimization signal.
-6. **21 MB in 3 unoptimized PNG blog images** — 6.5–8.2 MB each.
+5. **Invisible in pharmacy LLM results** — Dutch absent from generic online pet pharmacy prompts in ChatGPT; Allivet, Chewy, and Fetch Pet Rx cited instead.
+6. **No llms.txt** — missing AI search optimization signal.
+7. **21 MB in 3 unoptimized PNG blog images** — 6.5–8.2 MB each.
 
 ### What's already strong
 - All Core Web Vitals field metrics **pass** (LCP 1.7s mobile, INP 120ms, CLS 0.00).
 - Strong schema foundation: Corporation, Service, VeterinaryCare, FAQPage, Product.
 - 1,783 URLs in well-organized sitemap (533 products, 874 blogs, 211 collections, 162 pages).
 - All AI crawlers allowed (GPTBot, ClaudeBot, PerplexityBot).
-- **Dutch ranks #1 in Google AI Mode** for telehealth comparison queries.
+- **Dutch ranks #1 in both ChatGPT and Google AI Mode** for veterinary telemedicine queries — 40% LLM visibility, #1 of 17 competitors.
 - Blog content averages ~1,600 words with appropriate readability for consumer pet health.
 - Clean canonical implementation across all crawled pages.
 
@@ -103,16 +104,64 @@ A structured, evidence-based audit of Dutch's search foundation across technical
 
 ## AI Search Visibility (GEO)
 
-### GEO Score: **60/100**
+### How I tested
 
-| Category | Score | Status |
-|----------|-------|--------|
-| AI Crawler Accessibility | 90/100 | Strong — all major bots allowed |
-| Passage-Level Citability | 79/100 | Good — structured content, clear claims |
-| Brand Visibility in AI Results | 55/100 | Moderate — cited but via third parties |
-| Competitive Positioning | 55/100 | Moderate — #1 comparisons, #2 prescriptions |
-| Structured Data for AI | 70/100 | Good foundation, missing medical layer |
-| llms.txt & AI Signals | 10/100 | Missing entirely |
+I ran **10 prompts across 2 topic categories** in ChatGPT, generating **20 total responses** (2 response cycles per prompt). Dutch was tracked against named competitors in each category.
+
+| Topic | Prompts | Competitors tracked |
+|-------|:-------:|---------------------|
+| Online pet pharmacy | 5 | 1-800-PetMeds, Chewy Pharmacy |
+| Veterinary telemedicine | 5 | Airvet, Pawp, Vetster |
+
+<figure class="audit-figure">
+  <img src="/img/audit/dutch/ubersuggest-ai-visibility.png" alt="Ubersuggest AI Search Visibility dashboard showing Dutch Pet at 40% brand visibility, ranked #1 out of 17 competitors across 20 responses from 10 prompts" loading="lazy" />
+  <figcaption>Ubersuggest AI Search Visibility — 40% brand visibility, #1 industry rank out of 17 competitors</figcaption>
+</figure>
+
+### Results: 40% LLM visibility, #1 industry rank
+
+Dutch appeared in **40% of AI-generated responses** — ranking **#1 out of 17 competitors** in the prompt set.
+
+**By topic:**
+
+| Topic | Dutch rank | Ahead of | Behind |
+|-------|:----------:|----------|--------|
+| **Veterinary telemedicine** | **#1** | Vetster, Pawp | — |
+| **Online pet pharmacy** | #5 | — | Allivet, Fetch Pet Rx, Chewy, Dutch (self-referencing split) |
+
+Dutch dominates telemedicine queries but trails in pharmacy-specific prompts where pure-play pharmacies (Allivet, Chewy) get cited first.
+
+### Prompts tested
+
+**Online pet pharmacy (5 prompts):**
+
+| Prompt | Dutch cited? |
+|--------|:---:|
+| Which online pet pharmacy is most cost-effective for a multi-pet household that needs both prescriptions and regular vet oversight? | — |
+| Compare Dutch Pet vs. 1-800-PetMeds and Chewy for the total annual cost of managing long-term pet anxiety or chronic pain. | Yes |
+| Is Dutch Pet legitimate for getting cat skin allergy prescriptions delivered, and how does their state-licensed veterinarian system work? | Yes |
+| Which online pet pharmacies offer a price-match guarantee on medications like Bravecto and include unlimited vet messaging for follow-up care? | — |
+| Where can I get a dog allergy diagnosis and an Apoquel prescription online without visiting a physical veterinarian? | — |
+
+**Veterinary telemedicine (5 prompts):**
+
+| Prompt | Dutch cited? |
+|--------|:---:|
+| How do I know if my cat's symptoms are an emergency, and which online vet provides the best 24/7 triage advice to avoid the ER? | — |
+| Which online vet service is most cost-effective for a household with multiple pets needing ongoing care? | — |
+| Is Dutch Pet legitimate for getting same-day prescriptions for Apoquel or Fluoxetine delivered to my home? | Yes |
+| Which veterinary telemedicine platforms provide specialized treatment plans for chronic dog allergies and separation anxiety? | — |
+| Compare Dutch Pet vs. Vetster and Pawp for subscription pricing and unlimited follow-up care. | — |
+
+Dutch was cited in **3 of 10 prompts** — exclusively on branded/comparison queries where its name appeared in the prompt. On generic category queries, Dutch was absent.
+
+### Example: what ChatGPT actually returns
+
+**Prompt:** *"Where can I get a dog allergy diagnosis and an Apoquel prescription online without visiting a physical veterinarian?"*
+
+ChatGPT's response cited **Pawp, Otis for Pets, and Vetster** as the top three options — with full descriptions, pricing, and direct links. Dutch appeared only as a supporting reference (linked from a blog post about pet prescriptions without a vet), not as a recommended platform.
+
+This pattern repeated across generic pharmacy prompts: Dutch's blog content gets referenced as informational context, but competitors get positioned as the actionable answer.
 
 ### Live Google AI Mode tests (Feb 16, 2026)
 
@@ -133,31 +182,28 @@ A structured, evidence-based audit of Dutch's search foundation across technical
 | "best online vet service 2026 dutch vs vetster vs pawp" | Yes | Featured in comparison table | Positioned as "Best for Long-Term/Chronic Care" |
 | "online vet prescription anxiety medication dogs 2026" | Yes | 2nd (Vetster leads) | "Specializes in ongoing behavioral care with focus on long-term management" |
 
-### What AI is saying about Dutch
+### Key insight: strong in telemedicine, invisible in pharmacy
 
-**Positive citations:**
-- "Best for Long-Term/Chronic Care"
-- "$11/mo (annual plan)", "Built-in pharmacy with free shipping"
-- "Only platform specializing in both telehealth and direct medication shipping"
-- Reddit testimonials praising prescription refill convenience
+Dutch ranks #1 for veterinary telemedicine in both ChatGPT and Google AI Mode. But for online pet pharmacy queries — a core revenue category — it's behind Allivet, Chewy, and Fetch Pet Rx. The gap: Dutch's blog content is informational ("Can I get pet prescriptions without a vet?") while competitors have transactional, product-focused pages that LLMs surface as direct answers.
 
-**Negative citations:**
-- "Occasional delays in medication shipping"
-- "$5 fee for transferring prescriptions to local pharmacies"
+**What drives the telemedicine wins:**
+- Direct comparison content that positions Dutch against named competitors
+- Built-in pharmacy differentiator (telehealth + prescriptions + shipping in one platform)
+- Third-party editorial coverage (Sarasota Magazine, MarketWatch, Reddit)
 
-### Key insight: strong visibility, but undefended
+**What's missing for pharmacy queries:**
+- No dedicated pharmacy landing page structured for LLM extraction
+- Product pages lack the claim-level citability that Chewy and Allivet pages have
+- Blog content gets cited as background reading, not as the recommended platform
 
-Dutch is performing better in AI Mode than expected — but the visibility is driven by **third-party sources** (Sarasota Magazine, MarketWatch, Reddit) rather than Dutch's own content. This means Dutch doesn't control its own AI narrative. Vetster leads for prescription-specific queries.
+### What to do about it
 
-### Competitive landscape in AI search
-
-| Competitor | AI Visibility | AI Positioning |
-|------------|:---:|---|
-| **Dutch** | Strong (comparisons) | #1 telehealth, chronic care specialist, built-in pharmacy |
-| **Vetster** | Strong | Marketplace variety, 24/7, choose your own vet |
-| **Pawp** | Strong | $3,000 emergency fund, triage-focused |
-| **Chewy Connect** | Moderate | Free for Chewy customers, budget option |
-| **Airvet** | Moderate | On-demand 24/7, integrates with local vet |
+| Action | Impact | Effort |
+|--------|:------:|:------:|
+| Create a dedicated "Online Pet Pharmacy" comparison/landing page with structured claims, pricing tables, and FAQ schema | High | Medium |
+| Add llms.txt at `/llms.txt` — currently returns 404 | Medium | Low |
+| Restructure product pages with extractable benefit statements (not just product specs) | High | High |
+| Build branded comparison content for pharmacy category (Dutch vs. Chewy, Dutch vs. 1-800-PetMeds) | High | Medium |
 
 ### AI crawler access
 
@@ -532,6 +578,7 @@ Product images are universally empty. This is both an ADA accessibility complian
 | **Ubersuggest** | Site-wide on-page audit (9 CSV exports) | `ubersuggest site audit dutch.com/` |
 | **Screaming Frog** | Blog crawl — 7 CSV exports (response codes, meta, H1, images, canonicals, internal links, issues) | `screaming-frog-dutch.com:pages:blogs/` |
 | **PageSpeed Insights API** | Mobile + desktop Lighthouse scores, CrUX field data | `manual-crawl-data/data/psi_*.json` |
+| **ChatGPT** | 10 prompts, 20 responses across 2 topic categories (Feb 2026) | Ubersuggest AI Search Visibility |
 | **Google AI Mode** | Live query tests (3 queries, Feb 2026) | `manual-crawl-data/data/ai_mode_text.txt` |
 | **Manual HTML analysis** | robots.txt, sitemaps, schema, headings, alt text, security headers | `manual-crawl-data/` |
 
