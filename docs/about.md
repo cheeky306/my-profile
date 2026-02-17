@@ -19,11 +19,11 @@ I'm a brand and product strategist who found his way to technical SEO through th
 
 ## The short version
 
-I'm Jordian Farahani — originally from Regina, Canada. I spent the last 6 years building brands internationally: scaling DTC channels for GOOD GOOD Brand in Reykjavik (the 2,433% organic growth story), co-founding an AI-powered B2B commerce platform, and managing full-funnel marketing for companies ranging from power systems in Saskatoon to influencer marketing in London.
+I'm Jordian Farahani — originally from Regina, Canada. I spent the last 6 years building brands internationally: scaling DTC channels for GOOD GOOD Brand in Reykjavik (the 2,433% organic growth story), co-founding an AI-powered B2B commerce platform, managing full-funnel marketing ranging from local SMBs to influence marketing consultancy in London.
 
 Along the way, I kept gravitating toward the same thing: **the technical layer underneath marketing**. Crawl budgets, schema markup, site architecture, Core Web Vitals, AI search visibility. The part most marketers skip over is the part I find most interesting.
 
-Now I'm back in Canada, focused on technical SEO and AI search visibility (GEO) — and building this portfolio to show how I think, not just what I've done.
+Now I'm back at home in Canada, focused on technical SEO and AI search visibility. I am available for a start date ASAP.
 
 ---
 
