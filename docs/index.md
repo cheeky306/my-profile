@@ -4,13 +4,12 @@ title: Portfolio
 ---
 
 <section class="hs-hero">
-
 <div class="hs-wrap">
 
 <div class="hs-kicker">SEARCH • AI VISIBILITY • TECHNICAL SEO</div>
 
-# [Your Name Placeholder]
-## Elite Technical SEO & AI Search Strategist
+<h1 class="hs-h1">[Your Name Placeholder]</h1>
+<h2 class="hs-h2">Elite Technical SEO & AI Search Strategist</h2>
 
 <div class="hs-sub">
 I help companies get discovered in Google, AI search, and answer engines.
@@ -25,9 +24,10 @@ Below is a sample audit and technical breakdown of how I think.
 </div>
 </section>
 
----
+<section class="hs-section">
+<div class="hs-wrap">
 
-## Selected Work
+<h2 class="hs-section-title">Selected Work</h2>
 
 <div class="hs-grid">
 
@@ -59,3 +59,5 @@ Optional future section for results + wins.
 </div>
 
 </div>
+</div>
+</section>

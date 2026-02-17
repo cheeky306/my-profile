@@ -4,6 +4,8 @@ export default {
 
   base: "/my-profile/",
 
+  appearance: 'dark',
+
   themeConfig: {
     nav: [
       { text: "Home", link: "/" },
