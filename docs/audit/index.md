@@ -1,10 +1,9 @@
-# Audit Overview
+---
+title: Audits
+---
 
-## Scope
-Technical SEO
-Content & authority
-AI visibility
-Local SEO
+<AuditSelector />
 
-## Executive summary
-Top issues and opportunities.
+# Audits
+
+Select a company above to view the full audit.

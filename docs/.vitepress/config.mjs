@@ -12,18 +12,22 @@ export default {
 
     nav: [
       { text: "Home", link: "https://cheeky306.github.io/my-profile/" },
-      { text: "Overview", link: "/" },
-      { text: "Findings", link: "/findings" },
-      { text: "90 Day Plan", link: "/plan" }
+      { text: "Audits", link: "/" },
+      { text: "Dutch.com", link: "/dutch" }
     ],
 
     sidebar: [
       {
-        text: "Audit",
+        text: "Audits",
         items: [
           { text: "Overview", link: "/" },
-          { text: "Findings", link: "/findings" },
-          { text: "90 Day Plan", link: "/plan" }
+          {
+            text: "Dutch.com",
+            collapsed: false,
+            items: [
+              { text: "Full Audit", link: "/dutch" }
+            ]
+          }
         ]
       }
     ]
