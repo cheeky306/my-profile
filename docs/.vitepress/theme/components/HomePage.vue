@@ -9,7 +9,10 @@ import { withBase } from 'vitepress'
         <div class="nav-inner">
           <a class="brand" :href="withBase('/')">
             <img class="brand-logo" :src="withBase('/img/logo.png')" alt="JF" />
-            <span>Jordian's Portfolio</span>
+            <div class="brand-text">
+              <span>Jordian's Portfolio</span>
+              <span class="brand-credential">MSc Business Marketing — University of Reykjavik</span>
+            </div>
           </a>
 
           <nav class="nav-links" aria-label="Primary">
@@ -167,6 +170,13 @@ import { withBase } from 'vitepress'
 .homepage-wrapper .brand {
   display: flex; align-items: center; gap: 10px;
   font-weight: 700; font-size: 15px; letter-spacing: -.02em; color: #F7F6F3;
+}
+.homepage-wrapper .brand-text {
+  display: flex; flex-direction: column; line-height: 1.2;
+}
+.homepage-wrapper .brand-credential {
+  font-size: 9px; font-weight: 400; letter-spacing: .04em;
+  color: rgba(247,246,243,.38);
 }
 .homepage-wrapper .brand-logo {
   width: 32px; height: 32px; border-radius: 999px; object-fit: cover;
