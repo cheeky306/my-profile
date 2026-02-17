@@ -14,9 +14,10 @@ import { withBase } from 'vitepress'
 
           <nav class="nav-links" aria-label="Primary">
             <a class="nav-link" :href="withBase('/')">Home</a>
-            <a class="nav-link" :href="withBase('/audit/dutch')">Audit</a>
-            <a class="nav-link" href="#resume">Resume</a>
-            <a class="nav-link" href="#about">About</a>
+            <a class="nav-link" :href="withBase('/audit/dutch')">Work</a>
+            <a class="nav-link" :href="withBase('/resume')">Resume</a>
+            <a class="nav-link" :href="withBase('/methodology')">Methodology</a>
+            <a class="nav-link" :href="withBase('/about')">About</a>
           </nav>
 
           <div class="nav-right">
@@ -48,7 +49,7 @@ import { withBase } from 'vitepress'
           </p>
           <div class="hero-actions">
             <a class="btn btn-primary" :href="withBase('/audit/dutch')">View SEO Audit</a>
-            <a class="btn btn-signal" href="#resume">View Resume</a>
+            <a class="btn btn-signal" :href="withBase('/resume')">View Resume</a>
           </div>
         </div>
       </div>
@@ -75,80 +76,25 @@ import { withBase } from 'vitepress'
           </article>
 
           <article class="card">
-            <div class="meta">RESUME</div>
-            <h3>Experience &amp; Skills</h3>
+            <div class="meta">CASE STUDY</div>
+            <h3>Quantified Wins</h3>
             <p>
-              Technical SEO, on-page systems, analytics, search performance debugging,
-              and editorial strategy.
+              Problem &rarr; actions &rarr; outcomes. Numbers over narratives.
             </p>
-            <a class="link" href="#resume">
-              View Resume <span class="arrow">&rarr;</span>
+            <a class="link" :href="withBase('/case-study')">
+              View Case Studies <span class="arrow">&rarr;</span>
             </a>
           </article>
 
           <article class="card">
-            <div class="meta">CASE STUDY</div>
-            <h3>[Future Case Study]</h3>
+            <div class="meta">METHODOLOGY</div>
+            <h3>How I Audit</h3>
             <p>
-              Optional section for quantified wins. Keep it lean: problem &rarr; actions &rarr; outcomes.
+              Scoring framework, tool stack, and prioritization logic.
+              Transparent by default.
             </p>
-            <a class="link" href="#">
-              Coming Soon <span class="arrow">&rarr;</span>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="resume">
-      <div class="container">
-        <div class="section-title">
-          <h2>Resume</h2>
-          <div class="kicker">One page. High signal.</div>
-        </div>
-
-        <div class="grid">
-          <article class="card" style="grid-column: span 12;">
-            <div class="meta">SUMMARY</div>
-            <h3>[Role Title Placeholder]</h3>
-            <p>
-              Paste a tight 3&ndash;5 line summary here. Keep it measurable and specific.
-              Add 3 bullet &ldquo;strengths&rdquo; below later.
-            </p>
-            <a class="link" href="#">
-              Download PDF <span class="arrow">&rarr;</span>
-            </a>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="container">
-        <div class="section-title">
-          <h2>About</h2>
-          <div class="kicker">Clarity + proof.</div>
-        </div>
-
-        <div class="grid">
-          <article class="card" style="grid-column: span 7;">
-            <div class="meta">WHY THIS EXISTS</div>
-            <h3>How I work</h3>
-            <p>
-              Short paragraph: your operating principles, audit philosophy, and how you communicate.
-              No fluff.
-            </p>
-          </article>
-
-          <article class="card" style="grid-column: span 5;">
-            <div class="meta">CONTACT</div>
-            <h3>[Email Placeholder]</h3>
-            <p>
-              [LinkedIn Placeholder]<br/>
-              [Location Placeholder]
-            </p>
-            <a class="link" href="#">
-              Send message <span class="arrow">&rarr;</span>
+            <a class="link" :href="withBase('/methodology')">
+              View Methodology <span class="arrow">&rarr;</span>
             </a>
           </article>
         </div>
