@@ -41,7 +41,23 @@ export default {
         {
           text: "Portfolio",
           items: [
-            { text: "Dutch.com Audit", link: "/audit/dutch" }
+            { text: "Dutch.com Audit", link: "/audit/dutch" },
+            { text: "Case Studies", link: "/case-study" }
+          ]
+        },
+        {
+          text: "Reference",
+          items: [
+            { text: "Methodology", link: "/methodology" }
+          ]
+        }
+      ],
+      "/case-study": [
+        {
+          text: "Portfolio",
+          items: [
+            { text: "Dutch.com Audit", link: "/audit/dutch" },
+            { text: "Case Studies", link: "/case-study" }
           ]
         },
         {
