@@ -232,14 +232,13 @@ function toggleSection(name) {
         </div>
 
         <div class="grid">
-          <article class="card" style="grid-column: span 7;">
-            <div class="about-photo-row">
-              <img :src="withBase('/img/jordianv2.png')" alt="Jordian Farahani" class="about-photo" />
-              <div>
-                <div class="meta">HOW I WORK</div>
-                <h3>Evidence over opinion</h3>
-              </div>
-            </div>
+          <article class="card about-photo-card" style="grid-column: span 4;">
+            <img :src="withBase('/img/jordianv2.png')" alt="Jordian Farahani" class="about-photo" />
+          </article>
+
+          <article class="card" style="grid-column: span 4;">
+            <div class="meta">HOW I WORK</div>
+            <h3>Evidence over opinion</h3>
             <p>
               I approach SEO as an engineering discipline, not a checklist. Every recommendation
               ties back to observable evidence &mdash; crawl data, structured data validation,
@@ -250,7 +249,7 @@ function toggleSection(name) {
             </a>
           </article>
 
-          <article class="card" style="grid-column: span 5;">
+          <article class="card" style="grid-column: span 4;">
             <div class="meta">CONTACT</div>
             <h3>jordianfarahani@outlook.com</h3>
             <p>
@@ -545,12 +544,13 @@ function toggleSection(name) {
 }
 
 /* About photo */
-.homepage-wrapper .about-photo-row {
-  display: flex; align-items: center; gap: 14px; margin-bottom: 12px;
+.homepage-wrapper .about-photo-card {
+  display: flex; align-items: center; justify-content: center;
+  padding: 0; overflow: hidden;
 }
 .homepage-wrapper .about-photo {
-  width: 64px; height: 64px; border-radius: 14px; object-fit: cover;
-  border: 2px solid var(--border-soft);
+  width: 100%; height: 100%; object-fit: cover; object-position: top;
+  border-radius: var(--radius);
 }
 
 /* Footer */
