@@ -62,7 +62,7 @@ import { withBase } from 'vitepress'
       <div class="container">
         <div class="section-title">
           <h2>Selected Work</h2>
-          <div class="kicker">Structured. Not decorative.</div>
+          <div class="kicker">Evidence-based. Recruiter-ready.</div>
         </div>
 
         <div class="grid">
@@ -110,8 +110,8 @@ import { withBase } from 'vitepress'
     <footer class="footer">
       <div class="container">
         <div class="footer-inner">
-          <div>&copy; <span class="small-mono">[Your Name Placeholder]</span></div>
-          <div class="small-mono">Built for GitHub Pages</div>
+          <div>&copy; <span class="small-mono">Jordian Farahani</span></div>
+          <div class="small-mono">Made by Jordian Farahani</div>
         </div>
       </div>
     </footer>
