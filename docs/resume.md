@@ -3,14 +3,18 @@ title: Resume
 description: Professional experience, skills, and qualifications — Jordian Farahani.
 ---
 
-<div class="page-hero">
+<div class="page-hero resume-hero">
 
 <div class="kicker">EXPERIENCE • SKILLS • QUALIFICATIONS</div>
+
+<div class="resume-hero-inner">
+  <img src="/img/jordianv2.png" alt="Jordian Farahani" class="resume-photo" />
+  <div>
 
 # Jordian Farahani
 
 <div class="subhead">
-Brand & product strategist turned technical SEO specialist. 7+ years scaling international B2B and DTC brands — from a 2,433% organic growth pivot in Iceland to AI-powered search visibility systems. Bridges the gap between technical product architecture (MACH, headless CMS) and commercial market outcomes.
+Marketing manager with 7 years experience. Technical expert at driving organic growth. Proven track record driving 2,433% organic growth for Series B startup food brand GOOD GOOD.
 </div>
 
 <div class="contact-row">
@@ -18,11 +22,14 @@ Brand & product strategist turned technical SEO specialist. 7+ years scaling int
   <span>jordianfarahani@outlook.com</span>
 </div>
 
+  </div>
+</div>
+
 </div>
 
 ---
 
-## Core competencies
+## <span class="section-icon">&#9670;</span> Core Competencies
 
 <div class="competency-grid">
 
@@ -58,7 +65,7 @@ Technical Auditing, GEO Strategy, Schema Markup, AI Automation (Claude Code, Scr
 
 ---
 
-## Experience
+## <span class="section-icon">&#9881;</span> Experience
 
 ### Product Strategist & Co-Founder — Epic Web Techno (Buyience)
 <div class="meta-line">Remote · Apr 2024 – Sep 2025</div>
@@ -92,7 +99,7 @@ Technical Auditing, GEO Strategy, Schema Markup, AI Automation (Claude Code, Scr
 
 ---
 
-## Technical toolkit
+## <span class="section-icon">&#9874;</span> Technical Toolkit
 
 | Category | Tools & platforms |
 |---|---|
@@ -108,7 +115,7 @@ Technical Auditing, GEO Strategy, Schema Markup, AI Automation (Claude Code, Scr
 
 ---
 
-## Leadership & athletics
+## <span class="section-icon">&#9733;</span> Leadership & Athletics
 
 ### Co-Owner & Technical Coach
 <div class="meta-line">Canada & Iceland · 2010 – 2024</div>
@@ -125,26 +132,24 @@ Vancouver Whitecaps, Ottawa Fury, IR Reykjavik
 
 ---
 
-## Education
+## <span class="section-icon">&#9632;</span> Education
 
 ### MSc Business (Marketing) — Reykjavik University
 <div class="meta-line">Reykjavik, Iceland · 2020 – 2022 · Grade: 8.5 (First Class)</div>
-
-Recognized by Visiting Professor Ramon Diaz-Bernardo (PhD) for strong managerial skills.
 
 ### BA Political Science & Sociology — University of Saskatchewan
 <div class="meta-line">Saskatoon, Canada · 2009 – 2014</div>
 
 ---
 
-## Certifications
+## <span class="section-icon">&#10003;</span> Certifications
 
 - **Google Analytics & Google Ads Certificates** — Google, 2025
 - **Growth Marketing Certificate** — Growth Tribe / Beeckestijn Business School, 2024
 
 ---
 
-## References
+## <span class="section-icon">&#9998;</span> References
 
 - **Gardar Stefansson** — CEO, GOOD GOOD Brand
 - **Johan Ingi Kristjansson** — Chairman & Co-Founder, GOOD GOOD Brand
@@ -186,6 +191,41 @@ Recognized by Visiting Professor Ramon Diaz-Bernardo (PhD) for strong managerial
   font-size: 13px;
   color: rgba(255,255,255,.55);
 }
+
+/* Resume hero with photo */
+.resume-hero-inner{
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.resume-photo{
+  width: 110px;
+  height: 110px;
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: top;
+  border: 2px solid rgba(255,255,255,.10);
+  flex-shrink: 0;
+}
+@media (max-width: 640px){
+  .resume-hero-inner{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .resume-photo{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+/* Section icons */
+.section-icon{
+  color: rgba(255,140,50,.70);
+  margin-right: 6px;
+  font-size: 0.85em;
+}
+
 .meta-line{
   color: rgba(255,255,255,.55);
   font-size: 13px;

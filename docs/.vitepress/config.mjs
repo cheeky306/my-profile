@@ -66,6 +66,23 @@ export default {
             { text: "Methodology", link: "/methodology" }
           ]
         }
+      ],
+      "/resume": [
+        {
+          text: "About",
+          items: [
+            { text: "Resume", link: "/resume" },
+            { text: "About Me", link: "/about" },
+            { text: "Methodology", link: "/methodology" }
+          ]
+        },
+        {
+          text: "Portfolio",
+          items: [
+            { text: "Dutch.com Audit", link: "/audit/dutch" },
+            { text: "Case Study", link: "/case-study" }
+          ]
+        }
       ]
     }
   }
