@@ -182,7 +182,7 @@ import { withBase } from 'vitepress'
         <div class="grid">
           <article class="card" style="grid-column: span 7;">
             <div class="about-photo-row">
-              <img :src="withBase('/img/jordian.png')" alt="Jordian Farahani" class="about-photo" />
+              <img :src="withBase('/img/jordianv2.png')" alt="Jordian Farahani" class="about-photo" />
               <div>
                 <div class="meta">HOW I WORK</div>
                 <h3>Evidence over opinion</h3>
