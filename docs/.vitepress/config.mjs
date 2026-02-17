@@ -2,29 +2,30 @@ export default {
   title: "Audit Portal",
   description: "SEO + AI visibility audit",
 
-  base: "/my-profile/",
+  base: "/my-profile/audit/",
+  outDir: "../../dist/audit",
 
   appearance: 'dark',
 
   themeConfig: {
+    siteTitle: "Audit Portal",
+
     nav: [
-      { text: "Home", link: "/" },
-      { text: "Audit", link: "/audit/" },
-      { text: "Resume", link: "/resume" },
-      { text: "About", link: "/about" }
+      { text: "Home", link: "https://cheeky306.github.io/my-profile/" },
+      { text: "Overview", link: "/" },
+      { text: "Findings", link: "/findings" },
+      { text: "90 Day Plan", link: "/plan" }
     ],
 
-    sidebar: {
-      "/audit/": [
-        {
-          text: "Audit",
-          items: [
-            { text: "Overview", link: "/audit/" },
-            { text: "Findings", link: "/audit/findings" },
-            { text: "90 Day Plan", link: "/audit/plan" }
-          ]
-        }
-      ]
-    }
+    sidebar: [
+      {
+        text: "Audit",
+        items: [
+          { text: "Overview", link: "/" },
+          { text: "Findings", link: "/findings" },
+          { text: "90 Day Plan", link: "/plan" }
+        ]
+      }
+    ]
   }
 }
