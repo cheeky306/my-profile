@@ -34,7 +34,6 @@ I approach SEO as an engineering discipline, not a checklist. Every recommendati
 **Operating principles:**
 - **Evidence over opinion.** Every finding includes the data that supports it. If I can't show you the crawl output or the schema test, I don't make the claim.
 - **Prioritize by impact.** Not everything broken is worth fixing first. A missing favicon is not the same as 874 blog posts with agency authorship on a YMYL site.
-- **Ship clean documentation.** Audits should be readable by devs, marketers, and leadership — not buried in spreadsheets only an SEO can parse.
 - **Automate the repetitive.** I use Claude Code, custom scripts, and tools like Screaming Frog to handle the grunt work so I can focus on the analysis and strategy.
 
 ---
