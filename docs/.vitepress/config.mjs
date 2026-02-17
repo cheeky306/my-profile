@@ -1,9 +1,14 @@
+import { fileURLToPath } from 'url'
+import { dirname, resolve } from 'path'
+
+const __dirname = dirname(fileURLToPath(import.meta.url))
+
 export default {
   title: "Audit Portal",
   description: "SEO + AI visibility audit",
 
-  base: "/my-profile/audit/",
-  outDir: "../../dist/audit",
+  base: "/my-profile/",
+  outDir: resolve(__dirname, '../../dist'),
 
   appearance: 'dark',
 
@@ -12,24 +17,26 @@ export default {
 
     nav: [
       { text: "Home", link: "https://cheeky306.github.io/my-profile/" },
-      { text: "Audits", link: "/" },
-      { text: "Dutch.com", link: "/dutch" }
+      { text: "Audits", link: "/audit/" },
+      { text: "Dutch.com", link: "/audit/dutch" }
     ],
 
-    sidebar: [
-      {
-        text: "Audits",
-        items: [
-          { text: "Overview", link: "/" },
-          {
-            text: "Dutch.com",
-            collapsed: false,
-            items: [
-              { text: "Full Audit", link: "/dutch" }
-            ]
-          }
-        ]
-      }
-    ]
+    sidebar: {
+      "/audit/": [
+        {
+          text: "Audits",
+          items: [
+            { text: "Overview", link: "/audit/" },
+            {
+              text: "Dutch.com",
+              collapsed: false,
+              items: [
+                { text: "Full Audit", link: "/audit/dutch" }
+              ]
+            }
+          ]
+        }
+      ]
+    }
   }
 }

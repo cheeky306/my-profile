@@ -19,11 +19,11 @@ jobs:
           node-version: 20
       - run: npm install
 
-      # Build VitePress audit docs → dist/audit/
+      # Build VitePress → dist/
       - run: npm run docs:build
 
-      # Copy static homepage files into dist/
-      - run: mkdir -p dist && cp index.html dist/ && cp -r assets dist/
+      # Overlay static homepage + assets into dist/
+      - run: cp index.html dist/ && cp -r assets dist/
 
       - uses: actions/upload-pages-artifact@v3
         with:
