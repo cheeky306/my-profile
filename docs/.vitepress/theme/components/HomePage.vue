@@ -45,7 +45,7 @@ import { withBase } from 'vitepress'
       <div class="container">
         <div class="hero-inner">
           <div class="overline">SEARCH &bull; AI VISIBILITY &bull; TECHNICAL SEO</div>
-          <h1>[Your Name Placeholder] <br/><em>Audit System</em></h1>
+          <h1>Jordian Farahani <br/><em>Technical SEO &amp; Brand Strategist</em></h1>
           <p>
             I help teams get discovered in Google and AI search. This portal shows a sample audit,
             how I think, and the technical standards I ship against.
