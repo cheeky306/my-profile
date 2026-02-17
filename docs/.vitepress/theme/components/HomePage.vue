@@ -107,6 +107,66 @@ import { withBase } from 'vitepress'
       </div>
     </section>
 
+    <section class="section" id="resume">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resume</h2>
+          <div class="kicker">One page. High signal.</div>
+        </div>
+
+        <div class="grid">
+          <article class="card" style="grid-column: span 12;">
+            <div class="meta">SUMMARY</div>
+            <h3>Brand &amp; Product Strategist → Technical SEO</h3>
+            <p>
+              7+ years scaling international B2B and DTC brands &mdash; from a 2,433% organic growth
+              pivot in Iceland to AI-powered search visibility systems. Bridges the gap between
+              technical product architecture and commercial market outcomes.
+            </p>
+            <a class="link" :href="withBase('/resume')">
+              Full Resume <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About</h2>
+          <div class="kicker">Clarity + proof.</div>
+        </div>
+
+        <div class="grid">
+          <article class="card" style="grid-column: span 7;">
+            <div class="meta">HOW I WORK</div>
+            <h3>Evidence over opinion</h3>
+            <p>
+              I approach SEO as an engineering discipline, not a checklist. Every recommendation
+              ties back to observable evidence &mdash; crawl data, structured data validation,
+              performance metrics, or live AI search results.
+            </p>
+            <a class="link" :href="withBase('/about')">
+              Read More <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+
+          <article class="card" style="grid-column: span 5;">
+            <div class="meta">CONTACT</div>
+            <h3>jordianfarahani@outlook.com</h3>
+            <p>
+              Regina, Canada 🇨🇦<br/>
+              MSc Business Marketing &mdash; Reykjavik University
+            </p>
+            <a class="link" href="mailto:jordianfarahani@outlook.com">
+              Send message <span class="arrow">&rarr;</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <div class="footer-inner">
