@@ -49,7 +49,7 @@ function toggleSection(name) {
           </button>
 
           <div class="nav-right">
-            <div class="nav-location">Regina, SK <span class="flag">&#127464;&#127462;</span></div>
+            <div class="nav-location">Based in Canada <span class="flag">&#127464;&#127462;</span></div>
             <div class="nav-socials">
               <a class="social-icon" href="#" aria-label="WhatsApp" target="_blank" rel="noopener">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
@@ -95,16 +95,21 @@ function toggleSection(name) {
 
     <main id="home" class="hero">
       <div class="container">
-        <div class="hero-inner">
-          <div class="overline">SEARCH &bull; AI VISIBILITY &bull; TECHNICAL SEO</div>
-          <h1>Jordian Farahani <br/><em>Technical SEO &amp; Brand Strategist</em></h1>
-          <p>
-            I help teams get discovered in Google and AI search. This portal shows a sample audit,
-            how I think, and the technical standards I ship against.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" :href="withBase('/audit/dutch')">View SEO Audit</a>
-            <a class="btn btn-signal" :href="withBase('/resume')">View Resume</a>
+        <div class="hero-inner hero-split">
+          <div class="hero-text">
+            <div class="overline">SEARCH &bull; AI VISIBILITY &bull; TECHNICAL SEO</div>
+            <h1>Jordian Farahani <br/><em>Technical SEO &amp; Brand Strategist</em></h1>
+            <p>
+              I help teams get discovered in Google and AI search. This portal shows a sample audit,
+              how I think, and the technical standards I ship against.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" :href="withBase('/audit/dutch')">View SEO Audit</a>
+              <a class="btn btn-signal" :href="withBase('/resume')">View Resume</a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img :src="withBase('/img/jordianv2.png')" alt="Jordian Farahani" />
           </div>
         </div>
       </div>
@@ -236,11 +241,7 @@ function toggleSection(name) {
         </div>
 
         <div class="grid">
-          <article class="card about-photo-card" style="grid-column: span 4;">
-            <img :src="withBase('/img/jordianv2.png')" alt="Jordian Farahani" class="about-photo" />
-          </article>
-
-          <article class="card" style="grid-column: span 4;">
+          <article class="card" style="grid-column: span 6;">
             <div class="meta">HOW I WORK</div>
             <h3>Evidence over opinion</h3>
             <p>
@@ -253,7 +254,7 @@ function toggleSection(name) {
             </a>
           </article>
 
-          <article class="card" style="grid-column: span 4;">
+          <article class="card" style="grid-column: span 6;">
             <div class="meta">CONTACT</div>
             <h3>jordianfarahani@outlook.com</h3>
             <p>
@@ -461,6 +462,18 @@ function toggleSection(name) {
   mix-blend-mode: overlay; z-index: 0;
 }
 .homepage-wrapper .hero-inner { position: relative; z-index: 1; }
+.homepage-wrapper .hero-split {
+  display: flex; align-items: center; gap: clamp(32px, 4vw, 64px);
+}
+.homepage-wrapper .hero-text { flex: 1; min-width: 0; }
+.homepage-wrapper .hero-photo {
+  flex-shrink: 0; width: clamp(220px, 22vw, 320px);
+}
+.homepage-wrapper .hero-photo img {
+  width: 100%; border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0,0,0,.35);
+  object-fit: cover;
+}
 .homepage-wrapper .overline {
   font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase;
   font-size: 11px; color: rgba(212,98,42,.95); margin-bottom: 14px;
@@ -547,16 +560,6 @@ function toggleSection(name) {
   margin: 0; font-size: 13px; color: rgba(10,10,10,.65); line-height: 1.5;
 }
 
-/* About photo */
-.homepage-wrapper .about-photo-card {
-  display: flex; align-items: center; justify-content: center;
-  padding: 0; overflow: hidden;
-}
-.homepage-wrapper .about-photo {
-  width: 100%; height: 100%; object-fit: cover; object-position: top;
-  border-radius: var(--radius);
-}
-
 /* Footer */
 .homepage-wrapper .footer {
   padding: 34px 0; border-top: 1px solid var(--border-soft);
@@ -638,6 +641,9 @@ function toggleSection(name) {
   .homepage-wrapper .nav-location { display: none; }
   .homepage-wrapper .hamburger { display: flex; }
   .homepage-wrapper .mobile-menu { display: flex; }
+  .homepage-wrapper .hero-split { flex-direction: column; text-align: center; }
+  .homepage-wrapper .hero-photo { width: clamp(200px, 50vw, 280px); }
+  .homepage-wrapper .hero-actions { justify-content: center; }
 }
 @media (max-width: 620px) {
   .homepage-wrapper .card { grid-column: span 12; }
