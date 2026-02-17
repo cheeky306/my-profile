@@ -111,7 +111,6 @@ import { withBase } from 'vitepress'
       <div class="container">
         <div class="section-title">
           <h2>Resume</h2>
-          <div class="kicker">One page. High signal.</div>
         </div>
 
         <div class="grid">
@@ -135,7 +134,6 @@ import { withBase } from 'vitepress'
       <div class="container">
         <div class="section-title">
           <h2>About</h2>
-          <div class="kicker">Clarity + proof.</div>
         </div>
 
         <div class="grid">
