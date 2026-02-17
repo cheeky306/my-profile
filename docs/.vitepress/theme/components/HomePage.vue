@@ -17,10 +17,23 @@ import { withBase } from 'vitepress'
 
           <nav class="nav-links" aria-label="Primary">
             <a class="nav-link" :href="withBase('/')">Home</a>
-            <a class="nav-link" :href="withBase('/audit/dutch')">Portfolio</a>
-            <a class="nav-link" :href="withBase('/resume')">Resume</a>
-            <a class="nav-link" :href="withBase('/about')">About</a>
-            <a class="nav-link" href="#contact">Contact</a>
+            <div class="nav-dropdown">
+              <span class="nav-link nav-trigger">Portfolio <span class="chevron">&#9662;</span></span>
+              <div class="nav-dropdown-menu">
+                <a class="nav-dropdown-item" :href="withBase('/audit/dutch')">Dutch.com Audit</a>
+                <a class="nav-dropdown-item" :href="withBase('/case-study')">Case Studies</a>
+              </div>
+            </div>
+            <div class="nav-dropdown">
+              <span class="nav-link nav-trigger">About <span class="chevron">&#9662;</span></span>
+              <div class="nav-dropdown-menu">
+                <a class="nav-dropdown-item" :href="withBase('/resume')">Resume</a>
+                <a class="nav-dropdown-item" href="#skills">Skills</a>
+                <a class="nav-dropdown-item" :href="withBase('/methodology')">Methodology</a>
+                <a class="nav-dropdown-item" :href="withBase('/about')">About Me</a>
+                <a class="nav-dropdown-item" href="#contact">Contact</a>
+              </div>
+            </div>
           </nav>
 
           <div class="nav-right">
@@ -309,6 +322,41 @@ import { withBase } from 'vitepress'
   transition: transform .18s ease;
 }
 .homepage-wrapper .nav-link:hover:after { transform: scaleX(1); }
+
+/* Nav dropdowns */
+.homepage-wrapper .nav-dropdown {
+  position: relative;
+}
+.homepage-wrapper .nav-trigger {
+  cursor: pointer; user-select: none;
+}
+.homepage-wrapper .chevron {
+  font-size: 10px; margin-left: 2px; opacity: .5;
+}
+.homepage-wrapper .nav-dropdown-menu {
+  position: absolute; top: 100%; left: 50%; transform: translateX(-50%);
+  min-width: 160px; padding: 6px;
+  background: rgba(12,15,20,.96); backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,.08); border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+  opacity: 0; visibility: hidden; pointer-events: none;
+  transition: opacity .15s ease, transform .15s ease;
+  transform: translateX(-50%) translateY(4px);
+  z-index: 60;
+}
+.homepage-wrapper .nav-dropdown:hover .nav-dropdown-menu {
+  opacity: 1; visibility: visible; pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+.homepage-wrapper .nav-dropdown-item {
+  display: block; padding: 8px 12px; border-radius: 6px;
+  font-size: 13px; color: rgba(247,246,243,.65);
+  transition: color .12s ease, background .12s ease;
+  white-space: nowrap;
+}
+.homepage-wrapper .nav-dropdown-item:hover {
+  color: rgba(247,246,243,.95); background: rgba(255,255,255,.06);
+}
 .homepage-wrapper .nav-right {
   display: flex; flex-direction: column; align-items: flex-end; gap: 2px;
 }
