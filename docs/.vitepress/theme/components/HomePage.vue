@@ -176,7 +176,7 @@ import { withBase } from 'vitepress'
 }
 .homepage-wrapper .brand-credential {
   font-size: 9px; font-weight: 400; letter-spacing: .04em;
-  color: rgba(247,246,243,.38);
+  color: rgba(247,246,243,.38); margin-top: 3px;
 }
 .homepage-wrapper .brand-logo {
   width: 32px; height: 32px; border-radius: 999px; object-fit: cover;
