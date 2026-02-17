@@ -10,7 +10,7 @@ export default {
   base: "/my-profile/",
   outDir: resolve(__dirname, '../../dist'),
 
-  appearance: 'dark',
+  appearance: 'force-dark',
 
   themeConfig: {
     siteTitle: "Jordian Farahani",
