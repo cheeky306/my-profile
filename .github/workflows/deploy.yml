@@ -23,9 +23,7 @@ jobs:
       - run: npm run docs:build
 
       # Copy static homepage files into dist/
-      - run: |
-          cp index.html dist/
-          cp -r assets dist/
+      - run: mkdir -p dist && cp index.html dist/ && cp -r assets dist/
 
       - uses: actions/upload-pages-artifact@v3
         with:
