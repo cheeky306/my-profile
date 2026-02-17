@@ -118,7 +118,7 @@ function toggleSection(name) {
       <div class="container">
         <div class="section-title">
           <h2>Selected Work</h2>
-          <div class="kicker">Evidence-based. Recruiter-ready.</div>
+          <div class="kicker">Evidence-based.</div>
         </div>
 
         <div class="grid">
@@ -256,8 +256,8 @@ function toggleSection(name) {
             <div class="meta">CONTACT</div>
             <h3>jordianfarahani@outlook.com</h3>
             <p>
-              Regina, Canada 🇨🇦<br/>
-              MSc Business Marketing &mdash; Reykjavik University
+              Open to relocation<br/>
+              Regina, Canada 🇨🇦
             </p>
             <a class="link" href="mailto:jordianfarahani@outlook.com">
               Send message <span class="arrow">&rarr;</span>
