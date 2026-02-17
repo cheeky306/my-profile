@@ -67,14 +67,17 @@ import { withBase } from 'vitepress'
 
         <div class="grid">
           <article class="card dark">
-            <div class="meta">SEO AUDIT</div>
-            <h3>[Company Audit Placeholder]</h3>
+            <div class="meta">PET TELEHEALTH AUDIT</div>
+            <div class="card-brand">
+              <img :src="withBase('/img/audit/dutch/dutch-logo.png')" alt="Dutch.com" class="card-brand-logo" />
+              <h3>Dutch.com</h3>
+            </div>
             <p>
               Full technical + content audit showing how I approach crawlability,
               indexation, information architecture, and AI citation readiness.
             </p>
             <a class="link" :href="withBase('/audit/dutch')">
-              Open Audit <span class="arrow">&rarr;</span>
+              View Dutch Pet Audit <span class="arrow">&rarr;</span>
             </a>
           </article>
 
@@ -310,7 +313,14 @@ import { withBase } from 'vitepress'
   font-family: var(--mono); font-size: 11px; letter-spacing: .14em;
   text-transform: uppercase; color: rgba(10,10,10,.55); margin-bottom: 10px;
 }
+.homepage-wrapper .card-brand {
+  display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
+}
+.homepage-wrapper .card-brand-logo {
+  width: 28px; height: 28px; border-radius: 6px; object-fit: contain;
+}
 .homepage-wrapper .card h3 { margin: 0 0 8px; font-size: 18px; letter-spacing: -.02em; }
+.homepage-wrapper .card-brand h3 { margin: 0; }
 .homepage-wrapper .card p { margin: 0 0 16px; color: rgba(10,10,10,.70); font-size: 14px; }
 .homepage-wrapper .card.dark p { color: rgba(247,246,243,.62); }
 .homepage-wrapper .link {
