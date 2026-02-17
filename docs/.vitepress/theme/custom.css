@@ -11,3 +11,20 @@ body:has(.homepage-wrapper) .VPContent {
 body:has(.homepage-wrapper) .VPPage {
   padding: 0 !important;
 }
+
+/* === Move TOC from right aside to left sidebar === */
+
+/* Hide the default right-side aside */
+.VPDoc .aside {
+  display: none !important;
+}
+
+/* Hide the mobile "On this page" dropdown */
+.VPLocalNav .VPLocalNavOutlineDropdown {
+  display: none !important;
+}
+
+/* Let content use the full width since right aside is gone */
+.VPDoc.has-aside .content-container {
+  max-width: 100% !important;
+}
