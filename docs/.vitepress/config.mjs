@@ -18,21 +18,28 @@ export default {
     nav: [
       { text: "Home", link: "/" },
       {
-        text: "Work",
+        text: "Portfolio",
         items: [
           { text: "Dutch.com Audit", link: "/audit/dutch" },
           { text: "Case Studies", link: "/case-study" }
         ]
       },
-      { text: "Resume", link: "/resume" },
-      { text: "Methodology", link: "/methodology" },
-      { text: "About", link: "/about" }
+      {
+        text: "About",
+        items: [
+          { text: "Resume", link: "/resume" },
+          { text: "Skills", link: "/#skills" },
+          { text: "Methodology", link: "/methodology" },
+          { text: "About Me", link: "/about" },
+          { text: "Contact", link: "/#contact" }
+        ]
+      }
     ],
 
     sidebar: {
       "/audit/": [
         {
-          text: "Work",
+          text: "Portfolio",
           items: [
             { text: "Dutch.com Audit", link: "/audit/dutch" }
           ]

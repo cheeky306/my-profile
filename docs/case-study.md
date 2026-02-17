@@ -17,7 +17,7 @@ Lean format: what was broken, what I did, what changed. Numbers over narratives.
 
 ---
 
-<img src="/img/case-study/goodgood-logo.svg" alt="GOOD GOOD Brand logo" class="cs-client-logo" />
+<img src="/img/case-study/goodgood-logo.jpg" alt="GOOD GOOD Brand logo" class="cs-client-logo" />
 
 ## GOOD GOOD Brand — 2,433% Organic Growth
 

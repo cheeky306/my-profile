@@ -17,10 +17,10 @@ import { withBase } from 'vitepress'
 
           <nav class="nav-links" aria-label="Primary">
             <a class="nav-link" :href="withBase('/')">Home</a>
-            <a class="nav-link" :href="withBase('/audit/dutch')">Work</a>
+            <a class="nav-link" :href="withBase('/audit/dutch')">Portfolio</a>
             <a class="nav-link" :href="withBase('/resume')">Resume</a>
-            <a class="nav-link" :href="withBase('/methodology')">Methodology</a>
             <a class="nav-link" :href="withBase('/about')">About</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </nav>
 
           <div class="nav-right">
@@ -130,16 +130,64 @@ import { withBase } from 'vitepress'
       </div>
     </section>
 
-    <section class="section" id="about">
+    <section class="section" id="skills">
       <div class="container">
         <div class="section-title">
-          <h2>About</h2>
+          <h2>Skills</h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card">
+            <div class="meta">TECHNICAL SEO</div>
+            <p>Crawlability, indexation, canonicals, redirects, log file analysis, site architecture, Screaming Frog, Chrome DevTools</p>
+          </div>
+          <div class="skill-card">
+            <div class="meta">AI VISIBILITY (GEO)</div>
+            <p>Google AI Mode testing, llms.txt, crawler access auditing, passage-level citability, structured data for AI extraction</p>
+          </div>
+          <div class="skill-card">
+            <div class="meta">ON-PAGE SEO</div>
+            <p>Title/meta optimization, heading hierarchy, internal linking, keyword targeting, content architecture</p>
+          </div>
+          <div class="skill-card">
+            <div class="meta">STRUCTURED DATA</div>
+            <p>Schema.org (JSON-LD), rich results, medical/product/FAQ markup, entity optimization</p>
+          </div>
+          <div class="skill-card">
+            <div class="meta">PERFORMANCE</div>
+            <p>Core Web Vitals, Lighthouse, CrUX, PageSpeed Insights, JS auditing, lab vs. field analysis</p>
+          </div>
+          <div class="skill-card">
+            <div class="meta">BRAND STRATEGY</div>
+            <p>Product positioning, GTM execution, P&amp;L management, DTC scale-up, NPD pipeline, packaging &amp; visual identity</p>
+          </div>
+          <div class="skill-card">
+            <div class="meta">ANALYTICS</div>
+            <p>GA4 (certified), Google Search Console, Google Tag Manager, data interpretation, reporting dashboards</p>
+          </div>
+          <div class="skill-card">
+            <div class="meta">TOOLS</div>
+            <p>Screaming Frog, Ahrefs, SEMrush, Ubersuggest, Claude Code, Shopify, WordPress, headless CMS (Sanity, Ghost)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>About &amp; Contact</h2>
         </div>
 
         <div class="grid">
           <article class="card" style="grid-column: span 7;">
-            <div class="meta">HOW I WORK</div>
-            <h3>Evidence over opinion</h3>
+            <div class="about-photo-row">
+              <img :src="withBase('/img/jordian.jpg')" alt="Jordian Farahani" class="about-photo" />
+              <div>
+                <div class="meta">HOW I WORK</div>
+                <h3>Evidence over opinion</h3>
+              </div>
+            </div>
             <p>
               I approach SEO as an engineering discipline, not a checklist. Every recommendation
               ties back to observable evidence &mdash; crawl data, structured data validation,
@@ -392,6 +440,32 @@ import { withBase } from 'vitepress'
 .homepage-wrapper .link .arrow { transition: transform .16s ease; }
 .homepage-wrapper .link:hover .arrow { transform: translateX(2px); }
 
+/* Skills */
+.homepage-wrapper .skills-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px;
+}
+.homepage-wrapper .skill-card {
+  background: var(--paper); border: 1px solid var(--border-soft);
+  border-radius: var(--radius-sm); padding: 18px;
+  box-shadow: var(--shadow-1);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+.homepage-wrapper .skill-card:hover {
+  transform: translateY(-2px); box-shadow: var(--shadow-2);
+}
+.homepage-wrapper .skill-card p {
+  margin: 0; font-size: 13px; color: rgba(10,10,10,.65); line-height: 1.5;
+}
+
+/* About photo */
+.homepage-wrapper .about-photo-row {
+  display: flex; align-items: center; gap: 14px; margin-bottom: 12px;
+}
+.homepage-wrapper .about-photo {
+  width: 64px; height: 64px; border-radius: 14px; object-fit: cover;
+  border: 2px solid var(--border-soft);
+}
+
 /* Footer */
 .homepage-wrapper .footer {
   padding: 34px 0; border-top: 1px solid var(--border-soft);
@@ -408,11 +482,13 @@ import { withBase } from 'vitepress'
 /* Responsive */
 @media (max-width: 980px) {
   .homepage-wrapper .card { grid-column: span 6; }
+  .homepage-wrapper .skills-grid { grid-template-columns: repeat(2, 1fr); }
   .homepage-wrapper .nav-links { display: none; }
   .homepage-wrapper .nav-location { display: none; }
 }
 @media (max-width: 620px) {
   .homepage-wrapper .card { grid-column: span 12; }
+  .homepage-wrapper .skills-grid { grid-template-columns: 1fr; }
   .homepage-wrapper .nav-socials { gap: 6px; }
 }
 </style>
