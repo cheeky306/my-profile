@@ -30,7 +30,7 @@ function toggleSection(name) {
               <div class="nav-dropdown-menu">
                 <a class="nav-dropdown-item" :href="withBase('/audit/dutch')">Dutch.com Audit</a>
                 <a class="nav-dropdown-item" :href="withBase('/case-study')">Case Study</a>
-                <a class="nav-dropdown-item" :href="withBase('/llmo-tool')">LLMO Blog Tool</a>
+                <a class="nav-dropdown-item" :href="withBase('/llmo-tool')">LLM-O Blog Tool</a>
               </div>
             </div>
             <div class="nav-dropdown">
@@ -77,7 +77,7 @@ function toggleSection(name) {
         <div class="mobile-section-items" v-show="mobileSection === 'portfolio'">
           <a class="mobile-link sub" :href="withBase('/audit/dutch')" @click="mobileOpen = false">Dutch.com Audit</a>
           <a class="mobile-link sub" :href="withBase('/case-study')" @click="mobileOpen = false">Case Study</a>
-          <a class="mobile-link sub" :href="withBase('/llmo-tool')" @click="mobileOpen = false">LLMO Blog Tool</a>
+          <a class="mobile-link sub" :href="withBase('/llmo-tool')" @click="mobileOpen = false">LLM-O Blog Tool</a>
         </div>
       </div>
 

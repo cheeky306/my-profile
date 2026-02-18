@@ -22,7 +22,7 @@ export default {
         items: [
           { text: "Dutch.com Audit", link: "/audit/dutch" },
           { text: "Case Study", link: "/case-study" },
-          { text: "LLMO Blog Tool", link: "/llmo-tool" }
+          { text: "LLM-O Blog Tool", link: "/llmo-tool" }
         ]
       },
       {
@@ -61,7 +61,7 @@ export default {
           items: [
             { text: "Dutch.com Audit", link: "/audit/dutch" },
             { text: "Case Study", link: "/case-study" },
-            { text: "LLMO Blog Tool", link: "/llmo-tool" }
+            { text: "LLM-O Blog Tool", link: "/llmo-tool" }
           ]
         }
       ],
