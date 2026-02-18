@@ -3,7 +3,9 @@ title: About
 description: How I work, operating principles, and contact — Jordian Farahani.
 ---
 
-<div class="page-hero">
+<div class="page-hero about-hero-split">
+
+<div class="about-hero-text">
 
 <div class="kicker">CLARITY • PROOF • PRINCIPLES</div>
 
@@ -11,6 +13,12 @@ description: How I work, operating principles, and contact — Jordian Farahani.
 
 <div class="subhead">
 I'm a brand and product strategist who found his way to technical SEO through the messiest possible route — scaling a jam brand from Iceland into the US market, co-founding a SaaS platform, and playing professional soccer across three countries. Every step taught me something about systems, growth, and what actually moves the needle.
+</div>
+
+</div>
+
+<div class="about-hero-photo">
+  <img src="/img/jordian.png" alt="Jordian Farahani" />
 </div>
 
 </div>
@@ -202,6 +210,34 @@ Throughout all of it, I coached soccer on the side — 15+ years of mentoring yo
 @media (max-width: 640px){
   .about-figure-row{
     grid-template-columns: 1fr;
+  }
+}
+.about-hero-split{
+  display: flex;
+  align-items: center;
+  gap: clamp(24px, 4vw, 48px);
+}
+.about-hero-text{
+  flex: 1;
+  min-width: 0;
+}
+.about-hero-photo{
+  flex-shrink: 0;
+  width: clamp(180px, 20vw, 260px);
+}
+.about-hero-photo img{
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.3);
+  object-fit: cover;
+}
+@media (max-width: 640px){
+  .about-hero-split{
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-hero-photo{
+    width: clamp(180px, 50vw, 240px);
   }
 }
 </style>

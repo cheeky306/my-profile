@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 import { withBase } from 'vitepress'
+import AiOverviewAnim from './AiOverviewAnim.vue'
 
 const mobileOpen = ref(false)
 const mobileSection = ref('')
@@ -109,9 +110,8 @@ function toggleSection(name) {
               <a class="btn btn-signal" :href="withBase('/resume')">View Resume</a>
             </div>
           </div>
-          <div class="hero-photo">
-            <img class="hero-photo-desktop" :src="withBase('/img/jordian.png')" alt="Jordian Farahani" />
-            <img class="hero-photo-mobile" :src="withBase('/img/jordian-mobile.png')" alt="Jordian Farahani" />
+          <div class="hero-visual">
+            <AiOverviewAnim />
           </div>
         </div>
       </div>
@@ -467,17 +467,10 @@ function toggleSection(name) {
   display: flex; align-items: center; gap: clamp(32px, 4vw, 64px);
 }
 .homepage-wrapper .hero-text { flex: 1; min-width: 0; }
-.homepage-wrapper .hero-photo {
-  flex-shrink: 0; width: clamp(220px, 22vw, 320px);
-  margin-right: 24px; margin-top: 18px;
+.homepage-wrapper .hero-visual {
+  flex-shrink: 0; width: clamp(320px, 34vw, 440px);
+  margin-right: 8px; margin-top: 8px;
 }
-.homepage-wrapper .hero-photo img {
-  width: 100%; border-radius: 18px;
-  box-shadow: 0 12px 40px rgba(0,0,0,.35);
-  object-fit: cover;
-}
-.homepage-wrapper .hero-photo-mobile { display: none; }
-.homepage-wrapper .hero-photo-desktop { display: block; }
 .homepage-wrapper .overline {
   font-family: var(--mono); letter-spacing: .18em; text-transform: uppercase;
   font-size: 11px; color: rgba(212,98,42,.95); margin-bottom: 14px;
@@ -654,9 +647,7 @@ function toggleSection(name) {
   .homepage-wrapper .hamburger { display: flex; }
   .homepage-wrapper .mobile-menu { display: flex; }
   .homepage-wrapper .hero-split { flex-direction: column; text-align: center; }
-  .homepage-wrapper .hero-photo { width: clamp(200px, 50vw, 280px); margin-right: 0; margin-top: 12px; }
-  .homepage-wrapper .hero-photo-desktop { display: none; }
-  .homepage-wrapper .hero-photo-mobile { display: block; }
+  .homepage-wrapper .hero-visual { width: 100%; max-width: 400px; margin-right: 0; margin-top: 12px; }
   .homepage-wrapper .hero-actions { justify-content: center; }
 }
 @media (max-width: 620px) {
