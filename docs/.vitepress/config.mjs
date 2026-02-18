@@ -21,7 +21,8 @@ export default {
         text: "Portfolio",
         items: [
           { text: "Dutch.com Audit", link: "/audit/dutch" },
-          { text: "Case Study", link: "/case-study" }
+          { text: "Case Study", link: "/case-study" },
+          { text: "LLMO Blog Tool", link: "/llmo-tool" }
         ]
       },
       {
