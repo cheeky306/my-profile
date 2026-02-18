@@ -147,7 +147,7 @@ onUnmounted(() => { clearTimeout(timer) })
 }
 .aio-query-text {
   flex: 1;
-  font-size: 14px;
+  font-size: 12px;
   color: rgba(255,255,255,.85);
   font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
   white-space: nowrap;
@@ -226,12 +226,12 @@ onUnmounted(() => { clearTimeout(timer) })
 .aio-panel-header {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 12px 16px 8px;
+  gap: 6px;
+  padding: 8px 12px 6px;
 }
 .aio-sparkle { display: flex; align-items: center; }
 .aio-header-text {
-  font-size: 13px;
+  font-size: 11px;
   font-weight: 600;
   background: linear-gradient(90deg, #4285F4, #A142F4, #F44285);
   -webkit-background-clip: text;
@@ -241,48 +241,48 @@ onUnmounted(() => { clearTimeout(timer) })
 }
 
 .aio-content {
-  padding: 0 16px 14px;
+  padding: 0 12px 10px;
 }
 .aio-main-text {
-  font-size: 12.5px;
-  line-height: 1.6;
+  font-size: 10px;
+  line-height: 1.5;
   color: rgba(255,255,255,.72);
-  margin: 0 0 12px;
+  margin: 0 0 8px;
 }
 .aio-main-text strong {
   color: rgba(255,255,255,.88);
 }
 
 .aio-list {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 .aio-list-title {
-  font-size: 11px;
+  font-size: 9px;
   font-weight: 600;
   color: rgba(255,255,255,.55);
   text-transform: uppercase;
   letter-spacing: .08em;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .aio-list ul {
   margin: 0;
-  padding: 0 0 0 16px;
+  padding: 0 0 0 12px;
   list-style: none;
 }
 .aio-list li {
   position: relative;
-  font-size: 11.5px;
+  font-size: 9.5px;
   color: rgba(255,255,255,.62);
-  line-height: 1.55;
-  padding: 3px 0;
+  line-height: 1.45;
+  padding: 2px 0;
 }
 .aio-list li::before {
   content: "";
   position: absolute;
-  left: -12px;
-  top: 10px;
-  width: 4px;
-  height: 4px;
+  left: -10px;
+  top: 8px;
+  width: 3px;
+  height: 3px;
   border-radius: 50%;
   background: rgba(66,133,244,.5);
 }
@@ -299,17 +299,17 @@ onUnmounted(() => { clearTimeout(timer) })
 .aio-source {
   display: flex;
   align-items: center;
-  gap: 5px;
-  padding: 4px 10px;
+  gap: 4px;
+  padding: 3px 8px;
   border-radius: 20px;
   background: rgba(255,255,255,.05);
   border: 1px solid rgba(255,255,255,.06);
-  font-size: 10px;
+  font-size: 8px;
   color: rgba(255,255,255,.50);
 }
 .aio-source-icon {
-  width: 14px;
-  height: 14px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
 }
 .aio-source-icon.fetch { background: #6B4EBF; }
