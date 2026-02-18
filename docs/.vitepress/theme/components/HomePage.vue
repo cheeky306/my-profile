@@ -39,7 +39,7 @@ function toggleSection(name) {
                 <a class="nav-dropdown-item" href="#skills">Skills</a>
                 <!-- <a class="nav-dropdown-item" :href="withBase('/methodology')">Methodology</a> -->
                 <a class="nav-dropdown-item" :href="withBase('/about')">About Me</a>
-                <a class="nav-dropdown-item" href="#contact">Contact</a>
+                <a class="nav-dropdown-item" :href="withBase('/about#contact')">Contact</a>
               </div>
             </div>
           </nav>
@@ -88,7 +88,7 @@ function toggleSection(name) {
           <a class="mobile-link sub" href="#skills" @click="mobileOpen = false">Skills</a>
           <!-- <a class="mobile-link sub" :href="withBase('/methodology')" @click="mobileOpen = false">Methodology</a> -->
           <a class="mobile-link sub" :href="withBase('/about')" @click="mobileOpen = false">About Me</a>
-          <a class="mobile-link sub" href="#contact" @click="mobileOpen = false">Contact</a>
+          <a class="mobile-link sub" :href="withBase('/about#contact')" @click="mobileOpen = false">Contact</a>
         </div>
       </div>
     </div>

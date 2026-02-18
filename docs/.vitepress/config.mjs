@@ -30,7 +30,7 @@ export default {
           { text: "Resume", link: "/resume" },
           { text: "Skills", link: "/#skills" },
           { text: "About Me", link: "/about" },
-          { text: "Contact", link: "/#contact" }
+          { text: "Contact", link: "/about#contact" }
         ]
       }
     ],
