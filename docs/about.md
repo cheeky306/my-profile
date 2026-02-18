@@ -50,9 +50,9 @@ Crawlability, indexation, canonicals, redirect chains, log file analysis, headin
 </div>
 
 <div class="about-card">
-<h4>AI search visibility (GEO)</h4>
+<h4>LLM Optimization (LLMO)</h4>
 
-I test how brands actually appear in Google AI Mode, ChatGPT, and Perplexity. Crawler access auditing, llms.txt implementation, passage-level citability, structured data for AI extraction. AI search is evolving fast — I stay current through industry newsletters, Reddit communities, and practitioner forums so I'm always working with the latest best practices.
+I'm obsessed with the 'Search Revolution'. I make sure agentic crawlers have access, deploying machine-readable mirrors via llm.txt, and structuring data for seamless AI extraction. I thrive in this fast-paced evolution of AI search, maintaining a competitive edge through deep immersion in practitioner forums and real-time industry shifts to deliver results. 
 
 </div>
 
@@ -73,11 +73,12 @@ I've worked with developers (MACH architecture, headless CMS, WebSocket APIs), d
 </div>
 
 ---
-## The longer story
 
 <figure class="about-figure">
   <img src="/img/about/frame-6.png" alt="Jordian Farahani" loading="lazy" />
 </figure>
+
+## The longer story
 
 I studied Political Science and Sociology at the University of Saskatchewan, then played professional soccer — Vancouver Whitecaps, Ottawa Fury, and IR Reykjavik. That path took me to Iceland, where I completed a Master's in Business (Marketing) at Reykjavik University with First Class honours.
 
