@@ -97,6 +97,38 @@ function toggleSection(name) {
     </div>
 
     <main id="home" class="hero">
+      <!-- Floating AI logos -->
+      <div class="hero-logos" aria-hidden="true">
+        <div class="hero-logo-float" style="top:12%;left:6%;animation-delay:0s;animation-duration:18s;">
+          <svg viewBox="0 0 24 24" width="32" height="32"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 8h8v8H8z" fill="none" stroke="currentColor" stroke-width="1.2" rx="1"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
+          <span>Perplexity</span>
+        </div>
+        <div class="hero-logo-float" style="top:68%;left:3%;animation-delay:-4s;animation-duration:22s;">
+          <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-2h2v2h-2zm2-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z" fill="currentColor" opacity=".7"/></svg>
+          <span>ChatGPT</span>
+        </div>
+        <div class="hero-logo-float" style="top:22%;right:4%;animation-delay:-7s;animation-duration:20s;">
+          <svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 2L2 19.5h20L12 2z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 8l5 9.5H7L12 8z" fill="currentColor" opacity=".3"/></svg>
+          <span>Gemini</span>
+        </div>
+        <div class="hero-logo-float" style="top:75%;right:5%;animation-delay:-2s;animation-duration:19s;">
+          <svg viewBox="0 0 24 24" width="26" height="26"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M7 12h10M12 7v10" stroke="currentColor" stroke-width="1.2"/></svg>
+          <span>Copilot</span>
+        </div>
+        <div class="hero-logo-float" style="top:45%;left:1%;animation-delay:-10s;animation-duration:21s;">
+          <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 14c0-2.2 1.8-4 4-4s4 1.8 4 4" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="9" r="1.5" fill="currentColor"/></svg>
+          <span>Claude</span>
+        </div>
+        <div class="hero-logo-float" style="top:8%;left:42%;animation-delay:-5s;animation-duration:23s;">
+          <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+          <span>Grok</span>
+        </div>
+        <div class="hero-logo-float" style="top:82%;left:38%;animation-delay:-8s;animation-duration:17s;">
+          <svg viewBox="0 0 24 24" width="26" height="26"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+          <span>Meta AI</span>
+        </div>
+      </div>
+
       <div class="container">
         <div class="hero-inner hero-split">
           <div class="hero-text">
@@ -462,6 +494,38 @@ function toggleSection(name) {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
   mix-blend-mode: overlay; z-index: 0;
 }
+/* Floating AI logos */
+.homepage-wrapper .hero-logos {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+.homepage-wrapper .hero-logo-float {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  color: rgba(255,255,255,.06);
+  animation: logoFloat 20s ease-in-out infinite alternate;
+}
+.homepage-wrapper .hero-logo-float span {
+  font-size: 9px;
+  font-family: var(--mono);
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  opacity: .7;
+}
+@keyframes logoFloat {
+  0% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(-12px) rotate(2deg); }
+  50% { transform: translateY(6px) rotate(-1deg); }
+  75% { transform: translateY(-8px) rotate(1.5deg); }
+  100% { transform: translateY(4px) rotate(-0.5deg); }
+}
+
 .homepage-wrapper .hero-inner { position: relative; z-index: 1; }
 .homepage-wrapper .hero-split {
   display: flex; align-items: center; gap: clamp(32px, 4vw, 64px);
