@@ -393,7 +393,7 @@ Only 547 words for a trust cornerstone page on a medical site. Should be 1,000â€
 ### What's missing (medical authority layer)
 
 <figure class="audit-figure">
-  <img src="/img/audit/dutch/rich-results.png" alt="Google Rich Results Test output for Dutch.com showing existing structured data" loading="lazy" />
+  <img src="/img/audit/dutch/dutch-rich-results.png" alt="Google Rich Results Test output for Dutch.com showing existing structured data" loading="lazy" />
   <figcaption>Rich Results Test â€” existing schema validates, but the medical authority layer is absent</figcaption>
 </figure>
 
