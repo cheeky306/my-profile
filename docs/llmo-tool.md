@@ -17,6 +17,18 @@ A production-grade content pipeline I built using AI agent teams and human overs
 
 ---
 
+## Why this exists
+
+Content for AI search is a different game. Traditional SEO content — keyword-stuffed, opinion-heavy, lightly sourced — gets filtered out by generative engines. To earn citations in AI-generated answers, content needs to be:
+
+- **Structured for extraction** — chunked sections, answer-first sentences, scannable tables
+- **Evidence-dense** — every claim sourced, every statistic cited, every quote attributed
+- **Editorially governed** — consistent terminology, brand-aligned tone, no fluff
+
+This pipeline enforces all three. Systematically. Every time.
+
+---
+
 ## The problem
 
 Most content tools optimize for humans reading in a browser. That worked for 20 years of Google's link-based index. It doesn't work for AI search.

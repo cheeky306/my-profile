@@ -155,17 +155,17 @@ function toggleSection(name) {
             </a>
           </article>
 
-          <!-- <article class="card">
-            <div class="meta">METHODOLOGY</div>
-            <h3>How I Audit</h3>
+          <article class="card">
+            <div class="meta">CONTENT PIPELINE</div>
+            <h3>GEO Content Pipeline</h3>
             <p>
-              Scoring framework, tool stack, and prioritization logic.
-              Transparent by default.
+              The open-source content engine built for AI search.
+              Evidence-backed. GEO-optimized. Human-governed.
             </p>
-            <a class="link" :href="withBase('/methodology')">
-              View Methodology <span class="arrow">&rarr;</span>
+            <a class="link" :href="withBase('/llmo-tool')">
+              View Pipeline <span class="arrow">&rarr;</span>
             </a>
-          </article> -->
+          </article>
         </div>
       </div>
     </section>
