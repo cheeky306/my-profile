@@ -540,7 +540,6 @@ function toggleSection(name) {
   align-items: center;
   gap: 4px;
   color: rgba(255,255,255,.06);
-  animation: logoFloat 20s ease-in-out infinite alternate;
 }
 .homepage-wrapper .hero-logo-float span {
   font-size: 9px;
@@ -548,13 +547,6 @@ function toggleSection(name) {
   letter-spacing: .08em;
   text-transform: uppercase;
   opacity: .7;
-}
-@keyframes logoFloat {
-  0% { transform: translateY(0) rotate(0deg); }
-  25% { transform: translateY(-12px) rotate(2deg); }
-  50% { transform: translateY(6px) rotate(-1deg); }
-  75% { transform: translateY(-8px) rotate(1.5deg); }
-  100% { transform: translateY(4px) rotate(-0.5deg); }
 }
 
 .homepage-wrapper .hero-inner { position: relative; z-index: 1; }
