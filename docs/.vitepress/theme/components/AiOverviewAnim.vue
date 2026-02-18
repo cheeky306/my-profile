@@ -244,8 +244,8 @@ onUnmounted(() => { clearTimeout(timer) })
   padding: 0 12px 10px;
 }
 .aio-main-text {
-  font-size: 10px;
-  line-height: 1.5;
+  font-size: 8px;
+  line-height: 1.45;
   color: rgba(255,255,255,.72);
   margin: 0 0 8px;
 }
