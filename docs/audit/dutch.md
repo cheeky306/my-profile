@@ -582,8 +582,6 @@ Product images are universally empty. This is both an ADA accessibility complian
 | **Google AI Mode** | Live query tests (3 queries, Feb 2026) | `manual-crawl-data/data/ai_mode_text.txt` |
 | **Manual HTML analysis** | robots.txt, sitemaps, schema, headings, alt text, security headers | `manual-crawl-data/` |
 
-> The "retainer gap analysis" that accompanies this audit was originally written from the perspective of pitching Dutch as a client. This portfolio uses the audit as a work sample, so the focus is on clarity, evidence, and prioritization — not sales positioning.
-
 ---
 
 <style>
