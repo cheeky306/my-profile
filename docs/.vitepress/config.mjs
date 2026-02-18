@@ -29,7 +29,6 @@ export default {
         items: [
           { text: "Resume", link: "/resume" },
           { text: "Skills", link: "/#skills" },
-          { text: "Methodology", link: "/methodology" },
           { text: "About Me", link: "/about" },
           { text: "Contact", link: "/#contact" }
         ]
@@ -45,12 +44,6 @@ export default {
             { text: "Case Study", link: "/case-study" }
           ]
         },
-        {
-          text: "Reference",
-          items: [
-            { text: "Methodology", link: "/methodology" }
-          ]
-        }
       ],
       "/case-study": [
         {
@@ -59,12 +52,6 @@ export default {
             { text: "Dutch.com Audit", link: "/audit/dutch" },
             { text: "Case Study", link: "/case-study" }
           ]
-        },
-        {
-          text: "Reference",
-          items: [
-            { text: "Methodology", link: "/methodology" }
-          ]
         }
       ],
       "/resume": [
@@ -72,8 +59,7 @@ export default {
           text: "About",
           items: [
             { text: "Resume", link: "/resume" },
-            { text: "About Me", link: "/about" },
-            { text: "Methodology", link: "/methodology" }
+            { text: "About Me", link: "/about" }
           ]
         },
         {

@@ -37,7 +37,7 @@ function toggleSection(name) {
               <div class="nav-dropdown-menu">
                 <a class="nav-dropdown-item" :href="withBase('/resume')">Resume</a>
                 <a class="nav-dropdown-item" href="#skills">Skills</a>
-                <a class="nav-dropdown-item" :href="withBase('/methodology')">Methodology</a>
+                <!-- <a class="nav-dropdown-item" :href="withBase('/methodology')">Methodology</a> -->
                 <a class="nav-dropdown-item" :href="withBase('/about')">About Me</a>
                 <a class="nav-dropdown-item" href="#contact">Contact</a>
               </div>
@@ -86,7 +86,7 @@ function toggleSection(name) {
         <div class="mobile-section-items" v-show="mobileSection === 'about'">
           <a class="mobile-link sub" :href="withBase('/resume')" @click="mobileOpen = false">Resume</a>
           <a class="mobile-link sub" href="#skills" @click="mobileOpen = false">Skills</a>
-          <a class="mobile-link sub" :href="withBase('/methodology')" @click="mobileOpen = false">Methodology</a>
+          <!-- <a class="mobile-link sub" :href="withBase('/methodology')" @click="mobileOpen = false">Methodology</a> -->
           <a class="mobile-link sub" :href="withBase('/about')" @click="mobileOpen = false">About Me</a>
           <a class="mobile-link sub" href="#contact" @click="mobileOpen = false">Contact</a>
         </div>
@@ -152,7 +152,7 @@ function toggleSection(name) {
             </a>
           </article>
 
-          <article class="card">
+          <!-- <article class="card">
             <div class="meta">METHODOLOGY</div>
             <h3>How I Audit</h3>
             <p>
@@ -162,7 +162,7 @@ function toggleSection(name) {
             <a class="link" :href="withBase('/methodology')">
               View Methodology <span class="arrow">&rarr;</span>
             </a>
-          </article>
+          </article> -->
         </div>
       </div>
     </section>
