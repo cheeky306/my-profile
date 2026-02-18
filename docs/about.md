@@ -21,39 +21,9 @@ I'm a brand and product strategist who found his way to technical SEO through th
 
 I'm Jordian Farahani — originally from Regina, Canada. I spent the last 6 years building brands internationally: scaling DTC channels for GOOD GOOD Brand in Reykjavik (the 2,433% organic growth story), co-founding an AI-powered B2B commerce platform, managing full-funnel marketing ranging from local SMBs to influence marketing consultancy in London.
 
-Along the way, I kept gravitating toward the same thing: **the technical layer underneath marketing**. Crawl budgets, schema markup, site architecture, Core Web Vitals, AI search visibility. The part most marketers skip over is the part I find most interesting.
+Along the way, I kept gravitating toward the same thing: **the technical layer underneath marketing**. In the AI era it's LLM-Optimization that excites me the most. Legacy web architecture has been optimized exclusively for human UX for two decades. This 'human-first' debt creates a massive structural gap: websites now need to be as legible to machines as they are to people.  
 
-Now I'm back at home in Canada, focused on technical SEO and AI search visibility. I am available for a start date ASAP.
-
----
-
-## The longer story
-
-<figure class="about-figure">
-  <img src="/img/about/frame-6.png" alt="Jordian Farahani" loading="lazy" />
-</figure>
-
-I studied Political Science and Sociology at the University of Saskatchewan, then played professional soccer — Vancouver Whitecaps, Ottawa Fury, and IR Reykjavik. That path took me to Iceland, where I completed a Master's in Business (Marketing) at Reykjavik University with First Class honours.
-
-<div class="about-text-with-photo">
-<img src="/img/about/frame-7.png" alt="Jordian Farahani" class="about-inline-photo" loading="lazy" />
-
-While in Iceland, I joined **GOOD GOOD Brand** as Senior Brand & Digital Marketing Manager. That's where the growth story happened: I led the US-First pivot that turned a niche Icelandic jam company into the fastest-growing jam brand in the US market by late 2022. Organic traffic went from 1,500 to 38,300 monthly visitors. I owned the DTC P&L across Shopify, Amazon, and Instacart — break-even in 2 years.
-
-</div>
-
-<div class="about-figure-row">
-  <figure class="about-figure">
-    <img src="/img/about/frame-2.png" alt="Jordian Farahani" loading="lazy" />
-  </figure>
-  <figure class="about-figure">
-    <img src="/img/about/frame-4.png" alt="Jordian Farahani" loading="lazy" />
-  </figure>
-</div>
-
-After GOOD GOOD, I co-founded **Buyience** through Epic Web Techno — an AI-powered B2B commerce platform built on MACH principles. I led product strategy, wrote PRDs for features like real-time AI negotiation engines, and ran SEO and UX audits for agency clients.
-
-Throughout all of it, I coached soccer on the side — 15+ years of mentoring youth athletes, including co-owning a high-performance academy. The discipline and team leadership from professional sport carries into everything I do.
+Now I'm back at home in Canada, focused on technical SEO and AI search visibility. I am available for a quick turnaround start date.
 
 ---
 
@@ -101,6 +71,35 @@ I've worked with developers (MACH architecture, headless CMS, WebSocket APIs), d
 </div>
 
 </div>
+
+---
+## The longer story
+
+<figure class="about-figure">
+  <img src="/img/about/frame-6.png" alt="Jordian Farahani" loading="lazy" />
+</figure>
+
+I studied Political Science and Sociology at the University of Saskatchewan, then played professional soccer — Vancouver Whitecaps, Ottawa Fury, and IR Reykjavik. That path took me to Iceland, where I completed a Master's in Business (Marketing) at Reykjavik University with First Class honours.
+
+<div class="about-text-with-photo">
+<img src="/img/about/frame-7.png" alt="Jordian Farahani" class="about-inline-photo" loading="lazy" />
+
+While in Iceland, I joined **GOOD GOOD Brand** as Senior Brand & Digital Marketing Manager. That's where the growth story happened: I led the US-First pivot that turned a niche Icelandic jam company into the fastest-growing jam brand in the US market by late 2022. Organic traffic went from 1,500 to 38,300 monthly visitors. I owned the DTC P&L across Shopify, Amazon, and Instacart — break-even in 2 years.
+
+</div>
+
+<div class="about-figure-row">
+  <figure class="about-figure">
+    <img src="/img/about/frame-2.png" alt="Jordian Farahani" loading="lazy" />
+  </figure>
+  <figure class="about-figure">
+    <img src="/img/about/frame-4.png" alt="Jordian Farahani" loading="lazy" />
+  </figure>
+</div>
+
+After GOOD GOOD, I co-founded **Buyience** through Epic Web Techno — an AI-powered B2B commerce platform built on MACH principles. I led product strategy, wrote PRDs for features like real-time AI negotiation engines, and ran SEO and UX audits for agency clients.
+
+Throughout all of it, I coached soccer on the side — 15+ years of mentoring youth athletes, including co-owning a high-performance academy. The discipline and team leadership from professional sport carries into everything I do.
 
 ---
 
