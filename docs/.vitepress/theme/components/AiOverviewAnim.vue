@@ -118,7 +118,7 @@ onUnmounted(() => { clearTimeout(timer) })
 <style scoped>
 .aio-wrapper {
   width: 100%;
-  max-width: 420px;
+  max-width: 340px;
   display: flex;
   flex-direction: column;
   gap: 12px;

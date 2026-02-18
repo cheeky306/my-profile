@@ -540,7 +540,7 @@ function toggleSection(name) {
   flex-direction: column;
   align-items: center;
   gap: 5px;
-  color: rgba(255,255,255,.25);
+  color: rgba(255,255,255,.45);
 }
 .homepage-wrapper .hero-logo-item span {
   font-size: 9px;
