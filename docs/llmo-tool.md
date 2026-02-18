@@ -1,5 +1,5 @@
 ---
-title: LLMO Blog Tool
+title: LLM-O Blog Tool
 description: A multi-agent content pipeline that produces GEO/LLMO-optimized content — built with Claude Code agent teams and human-in-the-loop approval.
 ---
 
