@@ -99,32 +99,63 @@ function toggleSection(name) {
     <main id="home" class="hero">
       <!-- Floating AI logos -->
       <div class="hero-logos" aria-hidden="true">
+        <!-- Perplexity — compass/search mark -->
         <div class="hero-logo-float" style="top:12%;left:6%;animation-delay:0s;animation-duration:18s;">
-          <svg viewBox="0 0 24 24" width="32" height="32"><circle cx="12" cy="12" r="11" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 8h8v8H8z" fill="none" stroke="currentColor" stroke-width="1.2" rx="1"/><circle cx="12" cy="12" r="2.5" fill="currentColor"/></svg>
+          <svg viewBox="0 0 32 32" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M16 3v26M3 16h26M16 3l10 13-10 13L6 16z"/>
+          </svg>
           <span>Perplexity</span>
         </div>
+        <!-- ChatGPT — OpenAI knot -->
         <div class="hero-logo-float" style="top:68%;left:3%;animation-delay:-4s;animation-duration:22s;">
-          <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-2h2v2h-2zm2-4h-2c0-3.25 3-3 3-5 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 2.5-3 2.75-3 5z" fill="currentColor" opacity=".7"/></svg>
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4a6 6 0 014.5 10l-4.5 2.6L11.5 14A6 6 0 0116 4z"/>
+            <path d="M20.5 14a6 6 0 01-3 10.4L13 22l-.5-5.4A6 6 0 0120.5 14z"/>
+            <path d="M17.5 24.4A6 6 0 018 22l1-2.6 5 2.8a6 6 0 003.5 2.2z"/>
+            <path d="M11.5 18a6 6 0 013-10.4L19 10l.5 5.4A6 6 0 0111.5 18z"/>
+          </svg>
           <span>ChatGPT</span>
         </div>
+        <!-- Gemini — double sparkle -->
         <div class="hero-logo-float" style="top:22%;right:4%;animation-delay:-7s;animation-duration:20s;">
-          <svg viewBox="0 0 24 24" width="30" height="30"><path d="M12 2L2 19.5h20L12 2z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 8l5 9.5H7L12 8z" fill="currentColor" opacity=".3"/></svg>
+          <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
+            <path d="M16 2c0 7.7-6.3 14-14 14 7.7 0 14 6.3 14 14 0-7.7 6.3-14 14-14-7.7 0-14-6.3-14-14z" opacity=".7"/>
+          </svg>
           <span>Gemini</span>
         </div>
+        <!-- Copilot — swoosh -->
         <div class="hero-logo-float" style="top:75%;right:5%;animation-delay:-2s;animation-duration:19s;">
-          <svg viewBox="0 0 24 24" width="26" height="26"><rect x="3" y="3" width="18" height="18" rx="3" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M7 12h10M12 7v10" stroke="currentColor" stroke-width="1.2"/></svg>
+          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+            <path d="M6 20c2-6 6-10 10-10s8 4 10 10"/>
+            <path d="M6 18c2-4 6-7 10-7s8 3 10 7"/>
+          </svg>
           <span>Copilot</span>
         </div>
+        <!-- Claude — starburst -->
         <div class="hero-logo-float" style="top:45%;left:1%;animation-delay:-10s;animation-duration:21s;">
-          <svg viewBox="0 0 24 24" width="28" height="28"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 14c0-2.2 1.8-4 4-4s4 1.8 4 4" fill="none" stroke="currentColor" stroke-width="1.2"/><circle cx="12" cy="9" r="1.5" fill="currentColor"/></svg>
+          <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor">
+            <circle cx="16" cy="7" r="2.2" opacity=".8"/>
+            <circle cx="23.4" cy="11.5" r="2.2" opacity=".7"/>
+            <circle cx="23.4" cy="20.5" r="2.2" opacity=".6"/>
+            <circle cx="16" cy="25" r="2.2" opacity=".5"/>
+            <circle cx="8.6" cy="20.5" r="2.2" opacity=".6"/>
+            <circle cx="8.6" cy="11.5" r="2.2" opacity=".7"/>
+            <circle cx="16" cy="16" r="2.8"/>
+          </svg>
           <span>Claude</span>
         </div>
+        <!-- Grok / xAI — stylized X -->
         <div class="hero-logo-float" style="top:8%;left:42%;animation-delay:-5s;animation-duration:23s;">
-          <svg viewBox="0 0 24 24" width="24" height="24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M8 12l3 3 5-6" stroke="currentColor" stroke-width="1.2" fill="none"/></svg>
+          <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+            <path d="M6 6l20 20M26 6L6 26"/>
+          </svg>
           <span>Grok</span>
         </div>
+        <!-- Meta AI — infinity loop -->
         <div class="hero-logo-float" style="top:82%;left:38%;animation-delay:-8s;animation-duration:17s;">
-          <svg viewBox="0 0 24 24" width="26" height="26"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.2" fill="none" stroke-linecap="round"/></svg>
+          <svg viewBox="0 0 36 20" width="34" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M9 10c0-4 3.5-7 7-3.5L18 10l2-3.5c3.5-3.5 7-.5 7 3.5s-3.5 7-7 3.5L18 10l-2 3.5C12.5 17 9 14 9 10z"/>
+          </svg>
           <span>Meta AI</span>
         </div>
       </div>
