@@ -10,43 +10,36 @@ function sleep(ms) {
   return new Promise(r => (timer = setTimeout(r, ms)))
 }
 
-async function runLoop() {
-  while (true) {
-    // Reset
-    phase.value = 'idle'
-    typedQuery.value = ''
-    await sleep(1200)
+async function runOnce() {
+  // Idle
+  phase.value = 'idle'
+  typedQuery.value = ''
+  await sleep(1200)
 
-    // Type query
-    phase.value = 'typing'
-    for (let i = 0; i <= fullQuery.length; i++) {
-      typedQuery.value = fullQuery.slice(0, i)
-      await sleep(45 + Math.random() * 35)
-    }
-    await sleep(600)
-
-    // Searching
-    phase.value = 'searching'
-    await sleep(1400)
-
-    // Show AI Overview
-    phase.value = 'overview'
-    await sleep(8000)
-
-    // Hold then reset
-    phase.value = 'hold'
-    await sleep(1500)
+  // Type query
+  phase.value = 'typing'
+  for (let i = 0; i <= fullQuery.length; i++) {
+    typedQuery.value = fullQuery.slice(0, i)
+    await sleep(45 + Math.random() * 35)
   }
+  await sleep(600)
+
+  // Searching
+  phase.value = 'searching'
+  await sleep(1400)
+
+  // Show AI Overview — stays here permanently
+  phase.value = 'overview'
 }
 
-onMounted(() => { runLoop() })
+onMounted(() => { runOnce() })
 onUnmounted(() => { clearTimeout(timer) })
 </script>
 
 <template>
   <div class="aio-wrapper">
     <!-- Search bar -->
-    <div class="aio-search-bar" :class="{ minimized: phase === 'overview' || phase === 'hold' }">
+    <div class="aio-search-bar" :class="{ minimized: phase === 'overview' }">
       <div class="aio-google-icon">
         <svg width="18" height="18" viewBox="0 0 24 24">
           <path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/>
@@ -73,7 +66,7 @@ onUnmounted(() => { clearTimeout(timer) })
     </div>
 
     <!-- AI Overview panel -->
-    <div class="aio-panel" :class="{ visible: phase === 'overview' || phase === 'hold' }">
+    <div class="aio-panel" :class="{ visible: phase === 'overview' }">
       <div class="aio-panel-header">
         <div class="aio-sparkle">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none">
