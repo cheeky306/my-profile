@@ -97,66 +97,61 @@ function toggleSection(name) {
     </div>
 
     <main id="home" class="hero">
-      <!-- Floating AI logos -->
+      <!-- AI platform logos row -->
       <div class="hero-logos" aria-hidden="true">
-        <!-- Perplexity — compass/search mark -->
-        <div class="hero-logo-float" style="top:12%;left:6%;animation-delay:0s;animation-duration:18s;">
-          <svg viewBox="0 0 32 32" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M16 3v26M3 16h26M16 3l10 13-10 13L6 16z"/>
-          </svg>
-          <span>Perplexity</span>
-        </div>
-        <!-- ChatGPT — OpenAI knot -->
-        <div class="hero-logo-float" style="top:68%;left:3%;animation-delay:-4s;animation-duration:22s;">
-          <svg viewBox="0 0 32 32" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 4a6 6 0 014.5 10l-4.5 2.6L11.5 14A6 6 0 0116 4z"/>
-            <path d="M20.5 14a6 6 0 01-3 10.4L13 22l-.5-5.4A6 6 0 0120.5 14z"/>
-            <path d="M17.5 24.4A6 6 0 018 22l1-2.6 5 2.8a6 6 0 003.5 2.2z"/>
-            <path d="M11.5 18a6 6 0 013-10.4L19 10l.5 5.4A6 6 0 0111.5 18z"/>
-          </svg>
-          <span>ChatGPT</span>
-        </div>
-        <!-- Gemini — double sparkle -->
-        <div class="hero-logo-float" style="top:22%;right:4%;animation-delay:-7s;animation-duration:20s;">
-          <svg viewBox="0 0 32 32" width="32" height="32" fill="currentColor">
-            <path d="M16 2c0 7.7-6.3 14-14 14 7.7 0 14 6.3 14 14 0-7.7 6.3-14 14-14-7.7 0-14-6.3-14-14z" opacity=".7"/>
-          </svg>
-          <span>Gemini</span>
-        </div>
-        <!-- Copilot — swoosh -->
-        <div class="hero-logo-float" style="top:75%;right:5%;animation-delay:-2s;animation-duration:19s;">
-          <svg viewBox="0 0 32 32" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
-            <path d="M6 20c2-6 6-10 10-10s8 4 10 10"/>
-            <path d="M6 18c2-4 6-7 10-7s8 3 10 7"/>
-          </svg>
-          <span>Copilot</span>
-        </div>
-        <!-- Claude — starburst -->
-        <div class="hero-logo-float" style="top:45%;left:1%;animation-delay:-10s;animation-duration:21s;">
-          <svg viewBox="0 0 32 32" width="30" height="30" fill="currentColor">
-            <circle cx="16" cy="7" r="2.2" opacity=".8"/>
-            <circle cx="23.4" cy="11.5" r="2.2" opacity=".7"/>
-            <circle cx="23.4" cy="20.5" r="2.2" opacity=".6"/>
-            <circle cx="16" cy="25" r="2.2" opacity=".5"/>
-            <circle cx="8.6" cy="20.5" r="2.2" opacity=".6"/>
-            <circle cx="8.6" cy="11.5" r="2.2" opacity=".7"/>
-            <circle cx="16" cy="16" r="2.8"/>
-          </svg>
-          <span>Claude</span>
-        </div>
-        <!-- Grok / xAI — stylized X -->
-        <div class="hero-logo-float" style="top:8%;left:42%;animation-delay:-5s;animation-duration:23s;">
-          <svg viewBox="0 0 32 32" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-            <path d="M6 6l20 20M26 6L6 26"/>
-          </svg>
-          <span>Grok</span>
-        </div>
-        <!-- Meta AI — infinity loop -->
-        <div class="hero-logo-float" style="top:82%;left:38%;animation-delay:-8s;animation-duration:17s;">
-          <svg viewBox="0 0 36 20" width="34" height="20" fill="none" stroke="currentColor" stroke-width="1.5">
-            <path d="M9 10c0-4 3.5-7 7-3.5L18 10l2-3.5c3.5-3.5 7-.5 7 3.5s-3.5 7-7 3.5L18 10l-2 3.5C12.5 17 9 14 9 10z"/>
-          </svg>
-          <span>Meta AI</span>
+        <div class="hero-logos-row">
+          <div class="hero-logo-item">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M16 3v26M3 16h26M16 3l10 13-10 13L6 16z"/>
+            </svg>
+            <span>Perplexity</span>
+          </div>
+          <div class="hero-logo-item">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4a6 6 0 014.5 10l-4.5 2.6L11.5 14A6 6 0 0116 4z"/>
+              <path d="M20.5 14a6 6 0 01-3 10.4L13 22l-.5-5.4A6 6 0 0120.5 14z"/>
+              <path d="M17.5 24.4A6 6 0 018 22l1-2.6 5 2.8a6 6 0 003.5 2.2z"/>
+              <path d="M11.5 18a6 6 0 013-10.4L19 10l.5 5.4A6 6 0 0111.5 18z"/>
+            </svg>
+            <span>ChatGPT</span>
+          </div>
+          <div class="hero-logo-item">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+              <path d="M16 2c0 7.7-6.3 14-14 14 7.7 0 14 6.3 14 14 0-7.7 6.3-14 14-14-7.7 0-14-6.3-14-14z"/>
+            </svg>
+            <span>Gemini</span>
+          </div>
+          <div class="hero-logo-item">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round">
+              <path d="M6 20c2-6 6-10 10-10s8 4 10 10"/>
+              <path d="M6 18c2-4 6-7 10-7s8 3 10 7"/>
+            </svg>
+            <span>Copilot</span>
+          </div>
+          <div class="hero-logo-item">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="currentColor">
+              <circle cx="16" cy="7" r="2.2"/>
+              <circle cx="23.4" cy="11.5" r="2.2"/>
+              <circle cx="23.4" cy="20.5" r="2.2"/>
+              <circle cx="16" cy="25" r="2.2"/>
+              <circle cx="8.6" cy="20.5" r="2.2"/>
+              <circle cx="8.6" cy="11.5" r="2.2"/>
+              <circle cx="16" cy="16" r="2.8"/>
+            </svg>
+            <span>Claude</span>
+          </div>
+          <div class="hero-logo-item">
+            <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
+              <path d="M6 6l20 20M26 6L6 26"/>
+            </svg>
+            <span>Grok</span>
+          </div>
+          <div class="hero-logo-item">
+            <svg viewBox="0 0 36 20" width="26" height="16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M9 10c0-4 3.5-7 7-3.5L18 10l2-3.5c3.5-3.5 7-.5 7 3.5s-3.5 7-7 3.5L18 10l-2 3.5C12.5 17 9 14 9 10z"/>
+            </svg>
+            <span>Meta AI</span>
+          </div>
         </div>
       </div>
 
@@ -509,7 +504,7 @@ function toggleSection(name) {
 
 /* Hero */
 .homepage-wrapper .hero {
-  position: relative; padding: clamp(56px, 7vw, 96px) 0;
+  position: relative; padding: clamp(56px, 7vw, 96px) 0 clamp(90px, 10vw, 120px);
   overflow: hidden; border-bottom: 1px solid var(--border-soft);
 }
 .homepage-wrapper .hero:before {
@@ -525,28 +520,33 @@ function toggleSection(name) {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.6' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='.35'/%3E%3C/svg%3E");
   mix-blend-mode: overlay; z-index: 0;
 }
-/* Floating AI logos */
+/* AI platform logos row */
 .homepage-wrapper .hero-logos {
   position: absolute;
-  inset: 0;
+  bottom: 0; left: 0; right: 0;
   z-index: 0;
-  overflow: hidden;
   pointer-events: none;
 }
-.homepage-wrapper .hero-logo-float {
-  position: absolute;
+.homepage-wrapper .hero-logos-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(20px, 4vw, 48px);
+  padding: 16px 0 20px;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+.homepage-wrapper .hero-logo-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4px;
-  color: rgba(255,255,255,.06);
+  gap: 5px;
+  color: rgba(255,255,255,.25);
 }
-.homepage-wrapper .hero-logo-float span {
+.homepage-wrapper .hero-logo-item span {
   font-size: 9px;
   font-family: var(--mono);
   letter-spacing: .08em;
   text-transform: uppercase;
-  opacity: .7;
 }
 
 .homepage-wrapper .hero-inner { position: relative; z-index: 1; }
@@ -741,5 +741,8 @@ function toggleSection(name) {
   .homepage-wrapper .card { grid-column: span 12; }
   .homepage-wrapper .skills-grid { grid-template-columns: 1fr; }
   .homepage-wrapper .nav-socials { gap: 6px; }
+  .homepage-wrapper .hero-logos-row { gap: 14px; flex-wrap: wrap; }
+  .homepage-wrapper .hero-logo-item span { font-size: 7px; }
+  .homepage-wrapper .hero-logo-item svg { width: 18px; height: 18px; }
 }
 </style>
