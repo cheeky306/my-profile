@@ -35,7 +35,12 @@ Now I'm back at home in Canada, focused on technical SEO and AI search visibilit
 
 I studied Political Science and Sociology at the University of Saskatchewan, then played professional soccer — Vancouver Whitecaps, Ottawa Fury, and IR Reykjavik. That path took me to Iceland, where I completed a Master's in Business (Marketing) at Reykjavik University with First Class honours.
 
+<div class="about-text-with-photo">
+<img src="/img/about/frame-7.png" alt="Jordian Farahani" class="about-inline-photo" loading="lazy" />
+
 While in Iceland, I joined **GOOD GOOD Brand** as Senior Brand & Digital Marketing Manager. That's where the growth story happened: I led the US-First pivot that turned a niche Icelandic jam company into the fastest-growing jam brand in the US market by late 2022. Organic traffic went from 1,500 to 38,300 monthly visitors. I owned the DTC P&L across Shopify, Amazon, and Instacart — break-even in 2 years.
+
+</div>
 
 <div class="about-figure-row">
   <figure class="about-figure">
@@ -160,6 +165,23 @@ I've worked with developers (MACH architecture, headless CMS, WebSocket APIs), d
   font-size: 14px;
   color: rgba(255,255,255,.65);
   line-height: 1.55;
+}
+.about-text-with-photo{
+  display: flow-root;
+}
+.about-inline-photo{
+  float: right;
+  width: 220px;
+  margin: 0 0 14px 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,.10);
+}
+@media (max-width: 640px){
+  .about-inline-photo{
+    float: none;
+    width: 100%;
+    margin: 0 0 14px 0;
+  }
 }
 .about-figure{
   margin: 20px 0;
