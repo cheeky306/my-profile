@@ -7,7 +7,7 @@ description: A multi-agent content pipeline that produces GEO/LLMO-optimized con
 
 <div class="kicker">AGENT TEAMS &bull; HUMAN-IN-THE-LOOP &bull; GEO/LLMO</div>
 
-# LLMO Blog Tool
+# LLM-O Blog Tool
 
 <div class="subhead">
 A production-grade content pipeline I built using AI agent teams and human oversight to produce blog content optimized for LLM extraction — not just traditional search. Built to solve the structural gap between what AI search engines need and what most content tools produce.
@@ -17,7 +17,7 @@ A production-grade content pipeline I built using AI agent teams and human overs
 
 ---
 
-## Why this exists
+## TL;DR
 
 Content for AI search is a different game. Traditional SEO content — keyword-stuffed, opinion-heavy, lightly sourced — gets filtered out by generative engines. To earn citations in AI-generated answers, content needs to be:
 
